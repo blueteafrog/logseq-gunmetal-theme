@@ -1,4 +1,4 @@
-/* TODO Codemirror themeing */
+/* TODO Codemirror theming */
 /* TODO Finalize Color framework for theme */
 /* TODO Finalize Variable font settings for Theme */
 /* TODO Incorporate Recursive Font options for Monospaced sections */
@@ -64,22 +64,22 @@ html[data-theme="dark"] {
   --green: hsl(168, 100%, 82%);
   --blue: hsl(188, 100%, 82%);
 
-  --ls-primary-background-color: hsl(213, 14%, 13%);
-  --ls-secondary-background-color: hsl(213, 14%, 13%);
-  --ls-tertiary-background-color: hsl(213, 14%, 14%);
-  --ls-quaternary-background-color: hsl(213, 14%, 15%);
+  --ls-primary-background-color: hsl(213, 20%, 13%);
+  --ls-secondary-background-color: hsl(213, 20%, 13%);
+  --ls-tertiary-background-color: hsl(213, 20%, 14%);
+  --ls-quaternary-background-color: hsl(213, 20%, 15%);
 
-  --ls-table-tr-even-background-color: hsl(213, 14%, 20%, 0.3);
+  --ls-table-tr-even-background-color: hsl(213, 20%, 20%, 0.3);
 
   --ls-active-primary-color: hsl(168, 69%, 84%, .8);
   --ls-active-secondary-color: hsl(168, 69%, 74%, .8);
 
-  --ls-block-properties-background-color: hsl(213, 14%, 10%);
-  --ls-page-properties-background-color: hsl(213, 14%, 10%);
+  --ls-block-properties-background-color: hsl(213, 20%, 10%);
+  --ls-page-properties-background-color: hsl(213, 20%, 10%);
 
   --ls-search-background-color: var(--ls-primary-background-color);
 
-  --ls-border-color: hsl(213, 14%, 18%);
+  --ls-border-color: hsl(213, 20%, 18%);
   --ls-secondary-border-color: var(--ls-border-color);
   --ls-guideline-color: var(--ls-border-color);
 
@@ -97,8 +97,8 @@ html[data-theme="dark"] {
 
   --ls-slide-background-color: hsl(242, 8%, 8%);
 
-  --ls-block-bullet-border-color: hsl(213, 14%, 69%, 0.1);
-  --ls-block-bullet-color: hsl(213, 14%, 30%);
+  --ls-block-bullet-border-color: hsl(213, 20%, 69%, 0.1);
+  --ls-block-bullet-color: hsl(213, 20%, 30%);
   --ls-block-highlight-color: hsl(216, 29%, 18%);
 
   --ls-page-checkbox-color: hsl(188, 45%, 78%);
@@ -113,30 +113,30 @@ html[data-theme="dark"] {
 
   --ls-head-text-color: var(--ls-primary-text-color);
 
-  --ls-icon-color: hsl(213, 14%, 37%);
+  --ls-icon-color: hsl(213, 20%, 37%);
   --ls-search-icon-color: var(--ls-icon-color);
-  --ls-a-chosen-bg: hsl(213, 14%, 10%);
+  --ls-a-chosen-bg: hsl(213, 20%, 10%);
 
-  --color-level-1: hsl(213, 14%, 11%);
-  --color-level-2: hsl(213, 14%, 12%);
-  --color-level-3: hsl(213, 14%, 13%);
-  --color-level-4: hsl(213, 14%, 14%);
-  --color-level-5: hsl(213, 14%, 15%);
-  --color-level-6: hsl(213, 14%, 16%);
+  --color-level-1: hsl(213, 20%, 11%);
+  --color-level-2: hsl(213, 20%, 12%);
+  --color-level-3: hsl(213, 20%, 13%);
+  --color-level-4: hsl(213, 20%, 14%);
+  --color-level-5: hsl(213, 20%, 15%);
+  --color-level-6: hsl(213, 20%, 16%);
 
-	--cl-border-shade1: hsl(213, 14%, 60%, 0.2);
-  --cl-border-shade2: hsl(213, 14%, 50%, 0.2);
-  --cl-border-shade3: hsl(213, 14%, 40%, 0.2);
-  --cl-border-shade4: hsl(213, 14%, 30%, 0.2);
-  --cl-border-shade5: hsl(213, 14%, 20%, 0.2);
-  --cl-border-shade6: hsl(213, 14%, 10%, 0.2);
+	--cl-border-shade1: hsl(213, 20%, 60%, 0.2);
+  --cl-border-shade2: hsl(213, 20%, 50%, 0.2);
+  --cl-border-shade3: hsl(213, 20%, 40%, 0.2);
+  --cl-border-shade4: hsl(213, 20%, 30%, 0.2);
+  --cl-border-shade5: hsl(213, 20%, 20%, 0.2);
+  --cl-border-shade6: hsl(213, 20%, 10%, 0.2);
 
   --ui-button-bg: 202, 76%, 79%;
   --ui-button-color: 202, 76%, 75%;
   --ui-button-bg-hover: hsl(202, 76%, 75%);
 
-  --left-sb-bg-color: hsl(213, 14%, 13%);
-  --left-sb-bg-color-hover: hsl(213, 14%, 12%);
+  --left-sb-bg-color: hsl(213, 20%, 13%);
+  --left-sb-bg-color-hover: hsl(213, 20%, 12%);
 
   --left-sb-txt-color: hsl(210, 10%, 51%);
   --left-sb-txt-color-hover: hsl(210, 19%, 73%);
@@ -157,7 +157,7 @@ html[data-theme="dark"] {
 
   --pdf-asset-color: hsl(163, 36%, 65%);
 
-  --card-title-bg-color: hsl(213, 14%, 11%);
+  --card-title-bg-color: hsl(213, 20%, 11%);
 
   --codemirror-wrapper: #1A1E23;
 
@@ -251,8 +251,8 @@ html[data-theme="light"] {
   --ui-button-color: 202, 76%, 45%;
   --ui-button-bg-hover: hsl(202, 76%, 65%);
 
-  --left-sb-bg-color: hsl(213, 14%, 13%);
-  --left-sb-bg-color-hover: hsl(213, 14%, 12%);
+  --left-sb-bg-color: hsl(213, 20%, 13%);
+  --left-sb-bg-color-hover: hsl(213, 20%, 12%);
 
   --left-sb-txt-color: hsl(210, 10%, 51%);
   --left-sb-txt-color-hover: hsl(210, 19%, 73%);
@@ -274,7 +274,7 @@ html[data-theme="light"] {
 
   --card-title-bg-color: hsl(208, 33%, 96%);
 
-  --codemirror-wrapper: hsl(221, 11%, 14%);
+  --codemirror-wrapper: #21272F;
 
   --example-admon: hsl(225, 40%, 98%);
 
@@ -858,7 +858,7 @@ tr:nth-child(even) {
   --note: 210, 9%, 86%;
   --caution: 376, 100%, 84%;
   --pinned: 224, 88%, 80%;
-	--example: 213, 14%, 10%;
+	--example: 213, 20%, 10%;
 }
 
 /* START Admonition & Blockquote */
@@ -1351,7 +1351,7 @@ html[data-theme="light"] .cp__right-sidebar-inner .resizer:hover {
 div[data-refs-self*="card"],
 .cards-review {
 	outline: 1px solid var(--ls-border-color);
-	background-color: var(--color-level-1);
+	background-color: #dd;
 	box-shadow: var(--box-shadow-lg);
 	border-radius: var(--radius-none);
 }
@@ -1544,27 +1544,27 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-linenumber{
-color: #3F444E;
+color: #57636e;
 }
 
 .cm-s-solarized .CodeMirror-guttermarker {
-  color: #3F444E;
+  color: #57636e;
 }
 
 .cm-s-solarized .CodeMirror-guttermarker-subtle {
-  color: #3F444E;
+  color: #57636e;
 }
 
 .cm-s-solarized .CodeMirror-linenumber {
-  color: #3F444E;
+  color: #57636e;
 }
 
 .cm-s-solarized .CodeMirror-cursor {
-  border-left: 2px solid #e0cd68;
+  border-left: 5px solid #52b6ff;
 }
 
 .cm-s-solarized.cm-fat-cursor .CodeMirror-cursor {
-  background-color: #e0cd68 !important;
+  background-color: #52b6ff !important;
 }
 
 .cm-s-solarized .cm-animate-fat-cursor {
