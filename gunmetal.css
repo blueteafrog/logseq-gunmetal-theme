@@ -17,7 +17,7 @@
 
 	/* Default Variable Font Settings END */
 
-  --ls-font-family: Recursive;
+  --ls-font-family: Inter;
   --ls-page-text-size: 1em;
 
   --ls-page-title-size: 34px;
@@ -1721,54 +1721,60 @@ a[href*="flaremetrics.io/"] {
   background-size: 16px 16px;
 }
 
-a[href*="https://bitcoin.org/"] {
+a[href*="bitcoin.org/"] {
   background: url(https://bitcoin.org/favicon.ico) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
 
-a[href*="https://gitlab.com/"] {
+a[href*="gitlab.com/"] {
   background: url(https://gitlab.com/favicon.ico) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
 
-a[href*="https://vimeo.com/"] {
+a[href*="vimeo.com/"] {
   background: url(https://vimeo.com/favicon.ico) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
 
-a[href*="https://bitbucket.org/"] {
+a[href*="bitbucket.org/"] {
   background: url(https://bitbucket.org/favicon.ico) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
 
-a[href*="https://dev.to/"] {
+a[href*="dev.to/"] {
   background: url(https://dev.to/favicon.ico) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
-a[href*="https://developer.mozilla.org/"] {
+a[href*="developer.mozilla.org/"] {
   background: url(https://developer.mozilla.org/favicon.ico) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
 
-a[href*="https://opencollective.com/"] {
+a[href*="opencollective.com/"] {
   background: url(https://opencollective.com/favicon.ico) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
 
-a[href*="https://webdevtrick.com/"] {
+a[href*="webdevtrick.com/"] {
   background: url(https://webdevtrick.com/favicon.ico) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
-a[href*="https://en.wikipedia.org/"], a[href*="https://wikipedia.org/"] {
+a[href*="wikipedia.org/"]{
   background: url(https://wikipedia.org/favicon.ico) no-repeat left center;
+  padding-left: 19px;
+  background-size: 16px 16px;
+}
+
+a[href*="substack.com/"]{
+  background: url(https://substack.com/favicon.ico) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
