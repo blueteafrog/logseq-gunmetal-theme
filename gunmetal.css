@@ -17,7 +17,7 @@
 
 	/* Default Variable Font Settings END */
 
-  --ls-font-family: Inter;
+  --ls-font-family: Recursive;
   --ls-page-text-size: 1em;
 
   --ls-page-title-size: 34px;
@@ -117,12 +117,12 @@ html[data-theme="dark"] {
   --ls-search-icon-color: var(--ls-icon-color);
   --ls-a-chosen-bg: hsl(213, 14%, 10%);
 
-  --color-level-1: hsl(213, 14%, 12%);
-  --color-level-2: hsl(213, 14%, 13%);
-  --color-level-3: hsl(213, 14%, 14%);
-  --color-level-4: hsl(213, 14%, 15%);
-  --color-level-5: hsl(213, 14%, 16%);
-  --color-level-6: hsl(213, 14%, 17%);
+  --color-level-1: hsl(213, 14%, 11%);
+  --color-level-2: hsl(213, 14%, 12%);
+  --color-level-3: hsl(213, 14%, 13%);
+  --color-level-4: hsl(213, 14%, 14%);
+  --color-level-5: hsl(213, 14%, 15%);
+  --color-level-6: hsl(213, 14%, 16%);
 
 	--cl-border-shade1: hsl(213, 14%, 60%, 0.2);
   --cl-border-shade2: hsl(213, 14%, 50%, 0.2);
@@ -155,7 +155,7 @@ html[data-theme="dark"] {
 
   --caret-color: hsl(171, 100%, 58%);
 
-  --pdf-asset-color: hsl(162, 31%, 25%);
+  --pdf-asset-color: hsl(163, 36%, 65%);
 
   --card-title-bg-color: hsl(213, 14%, 11%);
 
@@ -270,7 +270,7 @@ html[data-theme="light"] {
 
   --caret-color: hsl(171, 100%, 28%);
 
-	--pdf-asset-color: hsl(156, 71%, 47%, .8);
+	--pdf-asset-color: hsl(14, 86%, 53%);
 
   --card-title-bg-color: hsl(208, 33%, 96%);
 
