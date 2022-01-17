@@ -344,7 +344,7 @@ strong, b{
 
 /* START TASKS */
 .form-checkbox {
-  /* background-color: var(--transparent); */
+  background-color: var(--transparent);
   border: 1px solid;
   border-color: var(--ls-page-checkbox-border-color, hsl(188, 45%, 78%, 0.8));
   color: var(--ls-page-checkbox-color, hsl(188, 45%, 68%, 0.8));
