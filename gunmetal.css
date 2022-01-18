@@ -3,6 +3,8 @@
 /* TODO Finalize Variable font settings for Theme */
 /* TODO Incorporate Recursive Font options for Monospaced sections */
 /* TODO Cleanup and optimize CSS where necessary */
+/* DONE Hackernoon custom URL Favicon */
+/* TODO Medium custom url favicon */
 
 @import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap");
 /*@import for "Recursive" Font If you would like to use it, change `--ls-font-family: Inter` to `--ls-font-family: Recursive` */
@@ -228,7 +230,7 @@ html[data-theme="light"] {
   --ls-icon-color: hsl(198, 13%, 68%);
   --ls-search-icon-color: var(--ls-icon-color);
 
-  --ls-a-chosen-bg: hsl(208, 33%, 96%);
+  --ls-a-chosen-bg: hsl(208, 33%, 94%);
 
   --color-level-1: hsl(208, 33%, 98%);
   --color-level-2: hsl(208, 33%, 97%);
@@ -1223,10 +1225,10 @@ html[data-theme="dark"] .ui__modal .cards-title {
 	  box-shadow: var(--box-shadow-sm);
   } */
 
-.cp__palette-main .chosen,
-.cp__settings-inner > aside ul > li.active {
-  background-color: var(--ls-quaternary-background-color);
-}
+	.cp__palette-main .chosen,
+	.cp__settings-inner > aside ul > li.active {
+		background-color: var(--ls-a-chosen-bg);
+	}
 
 .cp__right-sidebar .sidebar-item {
   border: none;
@@ -1782,6 +1784,24 @@ a[href*="wikipedia.org/"] {
 
 a[href*="substack.com/"] {
   background: url(https://substack.com/favicon.ico) no-repeat left center;
+  padding-left: 19px;
+  background-size: 16px 16px;
+}
+
+a[href*="hackernoon.com/"] {
+  background: url(https://hackernoon.com/favicon.ico) no-repeat left center;
+  padding-left: 19px;
+  background-size: 16px 16px;
+}
+
+html[data-theme="light"] a[href*="medium.com/"] {
+  background-image: url(./assets/medium.svg) no-repeat left center;
+  padding-left: 19px;
+  background-size: 16px 16px;
+}
+
+html[data-theme="dark"] a[href*="medium.com/"] {
+  background: url(./assets/medium.svg) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
