@@ -31,10 +31,9 @@ If you would like to use this font I've included in the theme css file.
 
 ### Screen Caps
 
+![screenshot1](https://user-images.githubusercontent.com/7694090/150065764-01d20835-42b3-4e6c-8918-d6d139a6b9be.png)
 
-![screenshot1](https://user-images.githubusercontent.com/7694090/149682066-5b54f8c5-b6c3-44a5-8f07-12e3b34624cc.jpg)
-
-![screenshot2](https://user-images.githubusercontent.com/7694090/149682059-a00d46b5-8699-4c3b-937c-d581574bdc03.jpg)
+![screenshot2](https://user-images.githubusercontent.com/7694090/150065756-f83a8882-5e21-4c2e-88e6-8bcf503f3db2.png)
 
 ### Issues & Feedback
 

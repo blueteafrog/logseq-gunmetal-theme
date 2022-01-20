@@ -3,8 +3,7 @@
 /* TODO Finalize Variable font settings for Theme */
 /* TODO Incorporate Recursive Font options for Monospaced sections */
 /* TODO Cleanup and optimize CSS where necessary */
-/* DONE Hackernoon custom URL Favicon */
-/* TODO Medium custom url favicon */
+
 
 @import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap");
 /*@import for "Recursive" Font If you would like to use it, change `--ls-font-family: Inter` to `--ls-font-family: Recursive` */
@@ -35,13 +34,15 @@
 
   --overlay: hsl(219, 15%, 4%);
 
-  --white: #fff;
 
   --opacity-none: 1;
   --opacity-sm: 0.8;
   --opacity-md: 0.6;
   --opacity-lg: 0.4;
 
+	--white: #fff;
+	--cream: 43, 98%, 82%;
+	--spring-green: 144, 79%, 64%;
   /* for dev purposes only used to visually identify elements that are not initially clear */
 }
 
@@ -90,7 +91,7 @@ html[data-theme="dark"] {
   --ls-title-text-color: var(--ls-primary-text-color);
 
   --ls-link-text-color: hsl(187, 22%, 56%);
-  --ls-link-text-hover-color: hsl(185, 100%, 82%, 0.6);
+  --ls-link-text-hover-color: hsl(185, 100%, 82%, 0.7);
 
   --ls-link-ref-text-color: var(--ls-link-text-color);
   --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
@@ -105,7 +106,7 @@ html[data-theme="dark"] {
   --ls-page-checkbox-border-color: hsl(188, 45%, 68%);
 
   --ls-page-inline-code-color: 203, 13%, 60%;
-  --ls-page-inline-code-bg-color: 213, 15%, 14%;
+  --ls-page-inline-code-bg-color: 213, 20%, 14%;
 
   --ls-scrollbar-foreground-color: rgba(228, 235, 244, 0.1);
   --ls-scrollbar-background-color: rgba(0, 0, 0, 0.05);
@@ -159,7 +160,9 @@ html[data-theme="dark"] {
 
   --card-title-bg-color: hsl(213, 20%, 11%);
 
-  --codemirror-wrapper: #1a1e23;
+  --codemirror-wrapper: #161B22;
+
+	--mobile-toolbar-border: hsl(213, 20%, 18%, 0.8);
 
   --box-shadow-sm: rgba(0, 0, 0, 0.15) 0 2px 3px 0;
   --box-shadow-lg: rgba(0, 0, 0, 0.15) 0 4px 6px 0;
@@ -169,7 +172,7 @@ html[data-theme="dark"] {
 }
 .white-theme,
 html[data-theme="light"] {
-  --aqua: 190, 82%, 82%;
+  --aqua: 209, 87%, 73%;
 
   --red: #e75154;
   --orange: #ffa542;
@@ -181,7 +184,7 @@ html[data-theme="light"] {
   --ls-tertiary-background-color: hsl(208, 33%, 99%);
   --ls-quaternary-background-color: hsl(208, 33%, 98%);
 
-  --ls-table-tr-even-background-color: hsl(208, 33%, 95%, 0.8);
+  --ls-table-tr-even-background-color: hsl(208, 33%, 97%);
 
   --ls-active-primary-color: hsl(199, 66%, 40%);
   --ls-active-secondary-color: hsl(199, 70%, 35%);
@@ -213,13 +216,13 @@ html[data-theme="light"] {
 
   --ls-block-bullet-border-color: hsl(197, 16%, 91%);
   --ls-block-bullet-color: hsl(200, 13%, 78%);
-  --ls-block-highlight-color: hsl(179, 45%, 88%);
+  --ls-block-highlight-color: hsl(218, 47%, 92%);
 
   --ls-page-checkbox-color: hsl(206, 41%, 57%);
   --ls-page-checkbox-border-color: hsl(206, 41%, 57%);
 
   --ls-page-inline-code-color: 198, 34%, 15%;
-  --ls-page-inline-code-bg-color: hsl(179, 32%, 96%);
+  --ls-page-inline-code-bg-color: 208, 33%, 97%;
 
   --ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.2);
   --ls-scrollbar-background-color: rgba(0, 0, 0, 0.1);
@@ -262,12 +265,12 @@ html[data-theme="light"] {
   --highlighter: hsl(41, 100%, 69%, 0.8);
   --highlighter-text: hsl(202, 33%, 17%);
 
-  --selection: hsl(165, 37%, 85%, 0.8);
+  --selection: hsl(212, 99%, 85%, 0.8);
 
   --page-ref-bg-hover: 209, 87%, 73%;
   --properties-border: 209, 17%, 88%;
 
-  --caret-color: hsl(171, 100%, 28%);
+  --caret-color: hsl(223, 76%, 0%);
 
   --pdf-asset-color: hsl(14, 86%, 53%);
 
@@ -276,6 +279,8 @@ html[data-theme="light"] {
   --codemirror-wrapper: #21272f;
 
   --example-admon: hsl(225, 40%, 98%);
+
+	--mobile-toolbar-border: hsl(209, 17%, 88%, 0.8);
 
   --box-shadow-sm: rgba(23, 42, 53, 0.1) 0 2px 3px 0;
   --box-shadow-lg: rgba(23, 40, 49, 0.1) 0 4px 6px 0;
@@ -374,7 +379,7 @@ a[priority]::before,
   border: 1px solid var(--transparent);
   border-radius: 100%;
   display: inline-block;
-  font-size: 12px;
+  font-size: 12px; /*Don't use scaled sizing use absolute font size */
   height: 16px;
   visibility: visible;
   width: 16px;
@@ -585,7 +590,7 @@ html[data-theme="light"] .ls-block h6::after {
 
 .block-ref :is(h1, h2, h3, h4, h5, h6) {
   border-bottom: none;
-  font-size: 1rem;
+  /* font-size: 1rem; */ /* Useless not sure why it was initially added*/
 }
 
 .editor-inner .uniline-block:is(.h1, .h2),
@@ -816,6 +821,10 @@ html[data-theme="dark"] .cp__right-sidebar {
   background-color: var(--ls-secondary-background-color);
 }
 
+.left-sidebar-inner .new-page {
+	background-color: var(--left-sb-bg-color);
+}
+
 @media (min-width: 640px) {
   .left-sidebar-inner .new-page {
     background-color: var(--left-sb-bg-color);
@@ -877,7 +886,7 @@ pre.pre-wrap-white-space {
 }
 
 .admonitionblock .is-paragraph {
-  font-size: 16px;
+  font-size: .885em;
 }
 
 html[data-theme="light"] pre.pre-wrap-white-space {
@@ -1160,6 +1169,7 @@ a.button:hover {
   background-color: hsl(var(--ls-page-inline-code-bg-color));
   border: 1px solid hsl(var(--ls-page-inline-code-color), 0.05);
   color: hsl(var(--ls-page-inline-code-color), 1);
+	padding: 2px 4px !important;
 }
 
 .dark-theme .inline code {
@@ -1201,6 +1211,15 @@ html[data-theme="dark"] .block-properties,
 html[data-theme="dark"] .color-level {
   border-radius: var(--radius-none);
   box-shadow: var(--box-shadow-sm);
+	/* outline: 1px solid var(--ls-border-color); */
+}
+
+div.header.items-center.mb-1 > a > a > i.ti-star{
+	color: hsl(var(--cream), 1);
+}
+
+div.header.items-center.mb-1 > a > a > i.ti-history{
+ color: hsl(var(--spring-green), 1);
 }
 
 /* .block-properties {
@@ -1348,7 +1367,7 @@ html[data-theme="dark"] .cp__right-sidebar-inner .resizer:hover {
 }
 
 html[data-theme="light"] .cp__right-sidebar-inner .resizer:hover {
-  background-color: hsl(var(--aqua), 0.6);
+  background-color: hsl(var(--aqua), 1);
   transition: var(--transition);
 }
 
@@ -1512,13 +1531,13 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 
 .cm-s-solarized.cm-s-dark {
   background-color: var(--codemirror-wrapper);
-  color: #e0cd68 !important;
+  color: #b7c7da !important;
   text-shadow: #0f1618 0 1px !important;
 }
 
 .cm-s-solarized.cm-s-white {
   background-color: var(--codemirror-wrapper);
-  color: #e0cd68 !important;
+  color: #b7c7da !important;
   text-shadow: #0f1618 0 1px !important;
 }
 
@@ -1529,22 +1548,22 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 }
 
 .cm-s-solarized div.CodeMirror-selected {
-  background: #1d2f3a;
+  background: #21354b;
 }
 
 .cm-s-solarized.cm-s-dark div.CodeMirror-selected {
-  background: #1d2f3a;
+  background: #21354b;
 }
 .cm-s-solarized .CodeMirror-line::selection,
 .cm-s-solarized .CodeMirror-line > span::selection,
 .cm-s-solarized .CodeMirror-line > span > span::selection {
-  background: #1d2f3a;
+  background: #21354b;
 }
 
 .cm-s-solarized .CodeMirror-line::-moz-selection,
 .cm-s-solarized .CodeMirror-line > span::-moz-selection,
 .cm-s-solarized .CodeMirror-line > span > span::-moz-selection {
-  background: #1d2f3a;
+  background: #21354b;
 }
 
 .cm-s-solarized .CodeMirror-gutter.CodeMirror-linenumbers {
@@ -1553,19 +1572,19 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
-  color: #57636e;
+  color: #738391;
 }
 
 .cm-s-solarized .CodeMirror-guttermarker {
-  color: #57636e;
+  color: #738391;
 }
 
 .cm-s-solarized .CodeMirror-guttermarker-subtle {
-  color: #57636e;
+  color: #738391;
 }
 
 .cm-s-solarized .CodeMirror-linenumber {
-  color: #57636e;
+  color: #738391;
 }
 
 .cm-s-solarized .CodeMirror-cursor {
@@ -1577,7 +1596,7 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 }
 
 .cm-s-solarized .cm-animate-fat-cursor {
-  background-color: #e0cd68 !important;
+  background-color: hot !important;
 }
 
 .cm-s-solarized span.cm-comment {
@@ -1626,7 +1645,7 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 }
 
 .cm-s-solarized span.cm-def {
-  color: #58b2df;
+  color: #52b6ff;
 }
 
 .cm-s-solarized span.cm-bracket {
@@ -1650,10 +1669,6 @@ html[data-theme="dark"] .keyboard-shortcut > code {
   color: #f8f8f0;
 }
 
-.cp__sidebar-left-layout a {
-  font-size: 14px;
-}
-
 .cm-s-solarized .cm-qualifier {
   color: #5cd2c7;
 }
@@ -1663,7 +1678,7 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 }
 
 .cm-s-solarized .CodeMirror-activeline-background {
-  background: #2a3546;
+  background: #282e37;
 }
 
 .cm-s-white .CodeMirror-matchingbracket {
@@ -1776,6 +1791,7 @@ a[href*="webdevtrick.com/"] {
   padding-left: 19px;
   background-size: 16px 16px;
 }
+
 a[href*="wikipedia.org/"] {
   background: url(https://wikipedia.org/favicon.ico) no-repeat left center;
   padding-left: 19px;
@@ -1795,13 +1811,25 @@ a[href*="hackernoon.com/"] {
 }
 
 html[data-theme="light"] a[href*="medium.com/"] {
-  background-image: url(./assets/medium.svg) no-repeat left center;
+  background: url(./assets/medium.svg) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
 
 html[data-theme="dark"] a[href*="medium.com/"] {
-  background: url(./assets/medium.svg) no-repeat left center;
+  background: url(./assets/medium-light.svg) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
+
+/* START Mobile Application Adjustments */
+
+#mobile-editor-toolbar {
+	outline: 1px solid var(--mobile-toolbar-border);
+}
+
+#mobile-editor-toolbar button {
+border-left: 1px solid var(--mobile-toolbar-border);
+}
+
+/*Mobile Application Adjustments END */
