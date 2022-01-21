@@ -4,7 +4,6 @@
 /* TODO Incorporate Recursive Font options for Monospaced sections */
 /* TODO Cleanup and optimize CSS where necessary */
 
-
 @import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap");
 /*@import for "Recursive" Font If you would like to use it, change `--ls-font-family: Inter` to `--ls-font-family: Recursive` */
 
@@ -103,7 +102,7 @@ html[data-theme="dark"] {
   --ls-block-highlight-color: hsl(216, 29%, 18%);
 
   --ls-page-checkbox-color: hsl(188, 45%, 78%);
-  --ls-page-checkbox-border-color: hsl(188, 45%, 68%);
+  --ls-page-checkbox-border-color: hsl(188, 45%, 68%, 0.8);
 
   --ls-page-inline-code-color: 203, 13%, 60%;
   --ls-page-inline-code-bg-color: 213, 20%, 14%;
@@ -160,7 +159,7 @@ html[data-theme="dark"] {
 
   --card-title-bg-color: hsl(213, 20%, 11%);
 
-  --codemirror-wrapper: #161B22;
+  --codemirror-wrapper: #161b22;
 
 	--mobile-toolbar-border: hsl(213, 20%, 18%, 0.8);
 
@@ -337,8 +336,8 @@ b {
 
 /* START Journal Header */
 
-.journal-title h1::before,
-.is-journals h1::before {
+.journal-title .title::before,
+.is-journals .title::before {
   content: "📅";
   font-size: 0.75em;
   margin-right: 10px;
@@ -354,6 +353,7 @@ b {
   border-color: var(--ls-page-checkbox-border-color, hsl(188, 45%, 78%, 0.8));
   color: var(--ls-page-checkbox-color, hsl(188, 45%, 68%, 0.8));
   opacity: var(--opacity-sm);
+	box-shadow: inset var(--box-shadow-sm);
 }
 
 .form-checkbox {
@@ -365,7 +365,7 @@ b {
 }
 
 .block-marker {
-  font-size: 100%;
+  font-size: 1em;
 }
 
 .priority {
@@ -1149,7 +1149,7 @@ html[data-theme="dark"] .ui__button:hover,
 html[data-theme="dark"] .cp__plugins-page .secondary-tabs button:hover,
 html[data-theme="dark"] .cp__plugins-page .tabs .ui__button:hover {
   background-color: var(--ui-button-bg-hover);
-  color: var(--inverted-text);
+  color: var(--inverted-text) !important;
 }
 
 html[data-theme="light"] .ui__button.active,
@@ -1268,7 +1268,7 @@ html[data-theme="dark"] .ui__modal .cards-title {
 }
 
 .cp__themes-installed > .it:hover {
-  background-color: var(--ls-quaternary-background-color);
+  background-color: var(--ls-block-highlight-color);
 }
 
 .block-content[data-type="annotation"] a.prefix-link::before {
@@ -1318,6 +1318,11 @@ html[data-theme="light"] .block-ref:hover {
   border: 1px dotted var(--ls-border-color);
 }
 
+.block-parents .page-ref{
+	/* Force color for page in reference blocks */
+	color: var(--ls-link-ref-text-color);
+}
+
 .page-reference:hover,
 .references-blocks .page-reference:hover {
   background-color: hsl(var(--page-ref-bg-hover), 0.2);
@@ -1358,7 +1363,7 @@ html[data-theme="dark"] .cp__sidebar-help-btn {
 }
 
 .tippy-popper {
-  filter: var(--drop-shadow-lg);
+  filter: var(--drop-shadow-sm);
 }
 
 html[data-theme="dark"] .cp__right-sidebar-inner .resizer:hover {
@@ -1431,6 +1436,10 @@ span.error {
   color: var(--pdf-asset-color);
   opacity: var(--opacity-sm);
 }
+
+.graph-filters{
+	background-color: var(--color-level-1);
+}
 /* MISC END */
 
 /* START Settings & Marketplace */
@@ -1446,7 +1455,7 @@ span.error {
 }
 
 .cp__themes-installed > .it.is-active {
-  background-color: var(--ls-quaternary-background-color);
+  background-color: var(--ls-block-highlight-color);
   /* opacity: 1; */
 }
 .cp__plugins-page .secondary-tabs button.active {
@@ -1806,6 +1815,11 @@ a[href*="substack.com/"] {
 
 a[href*="hackernoon.com/"] {
   background: url(https://hackernoon.com/favicon.ico) no-repeat left center;
+  padding-left: 19px;
+  background-size: 16px 16px;
+}
+a[href*="insights.glassnode.com/"] {
+  background: url(https://insights.glassnode.com/favicon.png) no-repeat left center;
   padding-left: 19px;
   background-size: 16px 16px;
 }
