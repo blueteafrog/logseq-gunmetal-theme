@@ -3,6 +3,9 @@
 /* TODO Finalize Variable font settings for Theme */
 /* TODO Incorporate Recursive Font options for Monospaced sections */
 /* TODO Cleanup and optimize CSS where necessary */
+/* TODO Plugins CSS Customizations */
+/* TODO CSS for Templater Plugin */
+
 
 @import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap");
 /*@import for "Recursive" Font If you would like to use it, change `--ls-font-family: Inter` to `--ls-font-family: Recursive` */
@@ -66,8 +69,8 @@ html[data-theme="dark"] {
 
   --ls-primary-background-color: hsl(213, 20%, 13%);
   --ls-secondary-background-color: hsl(213, 20%, 13%);
-  --ls-tertiary-background-color: hsl(213, 20%, 14%);
-  --ls-quaternary-background-color: hsl(213, 20%, 15%);
+  --ls-tertiary-background-color: hsl(213, 20%, 13%);
+  --ls-quaternary-background-color: hsl(213, 20%, 13%);
 
   --ls-table-tr-even-background-color: hsl(213, 20%, 20%, 0.3);
 
@@ -152,6 +155,7 @@ html[data-theme="dark"] {
   --selection: hsl(209, 87%, 73%, 0.1);
 
   --page-ref-bg-hover: 209, 87%, 73%;
+  --properties-border: 209, 17%, 88%;
 
   --caret-color: hsl(171, 100%, 58%);
 
@@ -306,7 +310,7 @@ p {
 
 i,
 em {
-  --slnt: -10;
+  --slnt: -15;
 }
 
 strong,
@@ -439,11 +443,6 @@ a[priority="C"]::before,
 /* Links END */
 
 /* START Bullet & Bullet Container */
-
-.bullet-container {
-  height: 20px;
-  width: 20px;
-}
 
 /* a:hover > .bullet-container .bullet {
 	background-color: hsl(var(--aqua), .8);
@@ -1200,18 +1199,21 @@ input {
   background: var(--ls-primary-background-color);
 }
 
+.block-properties,
+.color-level{
+ border-radius: var(--radius-md);
+ box-shadow: var(--box-shadow-sm);
+ outline: 1px solid var(--transparent)
+
+}
 html[data-theme="light"] .block-properties,
 html[data-theme="light"] .color-level {
-  border-radius: var(--radius-none);
-  box-shadow: var(--box-shadow-sm);
-  outline: 1px solid hsl(var(--properties-border), 0.5);
+outline-color:  hsl(var(--properties-border), 0.3);
 }
 
 html[data-theme="dark"] .block-properties,
 html[data-theme="dark"] .color-level {
-  border-radius: var(--radius-none);
-  box-shadow: var(--box-shadow-sm);
-	/* outline: 1px solid var(--ls-border-color); */
+	outline-color:  hsl(var(--properties-border), 0.01);
 }
 
 div.header.items-center.mb-1 > a > a > i.ti-star{
@@ -1440,6 +1442,12 @@ span.error {
 .graph-filters{
 	background-color: var(--color-level-1);
 }
+
+.flashcards-nav > a > span.ml-3.inline-block.py-0.\35 .rounded-full{
+	background-color: hsl(var(--tip), 0.05);
+	color: hsl(var(--tip), 0.6);
+	outline: 1px solid hsl(var(--tip), 0.1);
+}
 /* MISC END */
 
 /* START Settings & Marketplace */
@@ -1557,22 +1565,22 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 }
 
 .cm-s-solarized div.CodeMirror-selected {
-  background: #21354b;
+  background: #212832;
 }
 
 .cm-s-solarized.cm-s-dark div.CodeMirror-selected {
-  background: #21354b;
+  background: #212832;
 }
 .cm-s-solarized .CodeMirror-line::selection,
 .cm-s-solarized .CodeMirror-line > span::selection,
 .cm-s-solarized .CodeMirror-line > span > span::selection {
-  background: #21354b;
+  background: #212832;
 }
 
 .cm-s-solarized .CodeMirror-line::-moz-selection,
 .cm-s-solarized .CodeMirror-line > span::-moz-selection,
 .cm-s-solarized .CodeMirror-line > span > span::-moz-selection {
-  background: #21354b;
+  background: #212832;
 }
 
 .cm-s-solarized .CodeMirror-gutter.CodeMirror-linenumbers {
@@ -1581,19 +1589,19 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
-  color: #738391;
+  color: #546377;
 }
 
 .cm-s-solarized .CodeMirror-guttermarker {
-  color: #738391;
+  color: #546377;
 }
 
 .cm-s-solarized .CodeMirror-guttermarker-subtle {
-  color: #738391;
+  color: #546377;
 }
 
 .cm-s-solarized .CodeMirror-linenumber {
-  color: #738391;
+  color: #546377;
 }
 
 .cm-s-solarized .CodeMirror-cursor {
@@ -1603,13 +1611,12 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 .cm-s-solarized.cm-fat-cursor .CodeMirror-cursor {
   background-color: #52b6ff !important;
 }
-
 .cm-s-solarized .cm-animate-fat-cursor {
-  background-color: hot !important;
+  background-color: #facd00 !important;
 }
 
 .cm-s-solarized span.cm-comment {
-  color: #3e4750;
+  color: #546377;
 }
 
 .cm-s-solarized span.cm-atom {
@@ -1642,7 +1649,7 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 }
 
 .cm-s-solarized span.cm-variable-2 {
-  color: #e79260;
+  color: #ff6788;
 }
 
 .cm-s-solarized span.cm-variable-3 {
@@ -1836,6 +1843,12 @@ html[data-theme="dark"] a[href*="medium.com/"] {
   background-size: 16px 16px;
 }
 
+a[href*="atlassian.com/"] {
+  background: url(https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/assets/img/favicons/atlassian/apple-touch-icon-57x57.png) no-repeat left center;
+  padding-left: 19px;
+  background-size: 16px 16px;
+}
+
 /* START Mobile Application Adjustments */
 
 #mobile-editor-toolbar {
@@ -1847,3 +1860,44 @@ border-left: 1px solid var(--mobile-toolbar-border);
 }
 
 /*Mobile Application Adjustments END */
+
+
+/* Start Plugins */
+
+/* START Templater plugin */
+
+.templater-btn{
+  background-color: hsl(var(--ui-button-bg), 0.05);
+  border-radius: var(--radius-md);
+  color: hsl(var(--ui-button-color));
+  border: 1px solid hsl(var(--ui-button-color), 0.1);
+	padding: .2em .8em;
+}
+
+.templater-btn:hover{
+  background: hsl(var(--ui-button-bg));
+  color: var(--inverted-text);
+  border: 1px solid hsl(var(--ui-button-color));
+	cursor: pointer;
+}
+
+/* Templater plugin END */
+
+/* START TOC Generatorv Plugin */
+.kef-tocgen-backtop{
+  background-color: hsl(var(--ui-button-bg), 0.05);
+  color: hsl(var(--ui-button-color));
+  border: 1px solid hsl(var(--ui-button-color), 0.2);
+}
+
+.kef-tocgen-icon-backtop{
+	fill: hsl(var(--ui-button-color), 1);
+}
+
+.kef-tocgen-backtop:hover {
+	box-shadow: var(--box-shadow-lg);
+}
+/* TOC  TOC Generatorv Plugin END */
+
+/* Plugins END */
+
