@@ -6,7 +6,6 @@
 /* TODO Plugins CSS Customizations */
 /* TODO CSS for Templater Plugin */
 
-
 @import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap");
 /*@import for "Recursive" Font If you would like to use it, change `--ls-font-family: Inter` to `--ls-font-family: Recursive` */
 
@@ -355,9 +354,9 @@ b {
   background-color: var(--transparent);
   border: 1px solid;
   border-color: var(--ls-page-checkbox-border-color, hsl(188, 45%, 78%, 0.8));
+	box-shadow: inset var(--box-shadow-sm);
   color: var(--ls-page-checkbox-color, hsl(188, 45%, 68%, 0.8));
   opacity: var(--opacity-sm);
-	box-shadow: inset var(--box-shadow-sm);
 }
 
 .form-checkbox {
@@ -428,8 +427,8 @@ a[priority="C"]::before,
 
 .external-link {
   border-bottom: 1px dotted var(--external-link-color);
-  color: var(--external-link-color);
   border-radius: var(--radius-sm);
+  color: var(--external-link-color);
 }
 
 .external-link:hover {
@@ -662,8 +661,8 @@ html[data-theme="light"] .ls-block h6::after {
 
 html[data-theme="dark"] .content a.tag {
   background-color: hsl(var(--tag-general-color), 0.05);
-  color: hsl(var(--tag-general-color), 0.8);
   border: 1px solid hsl(var(--tag-general-color), 0.08);
+  color: hsl(var(--tag-general-color), 0.8);
 }
 
 html[data-theme="dark"] .content a.tag:hover {
@@ -678,33 +677,33 @@ html[data-theme="light"] .content a.tag {
 /* START Custom Tags */
 html[data-theme="dark"] .content a.tag[data-ref="new"] {
   background-color: hsl(var(--tag-new), 0.05);
-  color: hsl(var(--tag-new), 0.8);
   border: 1px solid hsl(var(--tag-new), 0.08);
+  color: hsl(var(--tag-new), 0.8);
 }
 html[data-theme="dark"] .content a.tag[data-ref="doing"] {
   background-color: hsl(var(--tag-doing), 0.05);
-  color: hsl(var(--tag-doing), 0.8);
   border: 1px solid hsl(var(--tag-doing), 0.08);
+  color: hsl(var(--tag-doing), 0.8);
 }
 
 html[data-theme="dark"] .content a.tag[data-ref="wait"],
 html[data-theme="dark"] .content a.tag[data-ref="waiting"] {
   background-color: hsl(var(--tag-wait), 0.05);
-  color: hsl(var(--tag-wait), 0.8);
   border: 1px solid hsl(var(--tag-wait), 0.08);
+  color: hsl(var(--tag-wait), 0.8);
 }
 
 html[data-theme="dark"] .content a.tag[data-ref="done"] {
   background-color: hsl(var(--tag-done), 0.05);
-  color: hsl(var(--tag-done), 0.8);
   border: 1px solid hsl(var(--tag-done), 0.08);
+  color: hsl(var(--tag-done), 0.8);
 }
 
 html[data-theme="dark"] .content a.tag[data-ref="canceled"],
 html[data-theme="dark"] .content a.tag[data-ref="cancelled"] {
   background-color: hsl(var(--tag-canceled), 0.05);
-  color: hsl(var(--tag-canceled), 0.8);
   border: 1px solid hsl(var(--tag-canceled), 0.08);
+  color: hsl(var(--tag-canceled), 0.8);
   text-decoration: line-through;
 }
 
@@ -889,8 +888,8 @@ pre.pre-wrap-white-space {
 }
 
 html[data-theme="light"] pre.pre-wrap-white-space {
-  border: 1px solid hsl(var(--example), 0.06);
-  background-color: hsl(var(--example), 0.05);
+  background-color: hsl(var(--example), 0.03);
+  border: 1px solid hsl(var(--example), 0.02);
 }
 
 blockquote::before {
@@ -903,7 +902,7 @@ blockquote::before {
 
 html[data-theme="light"] blockquote {
   background-color: hsl(var(--bq), 0.15);
-  border: 1px solid hsl(var(--bq), 0.2);
+  border: 1px solid hsl(var(--bq), 0.1);
 }
 
 html[data-theme="light"] blockquote::before {
@@ -917,13 +916,13 @@ html[data-theme="light"] blockquote .is-paragraph:first-child {
 
 html[data-theme="light"] .verse {
   background-color: hsl(var(--verse), 0.1);
-  border: 1px solid hsl(var(--verse), 0.2);
+  border: 1px solid hsl(var(--verse), 0.1);
   font-style: italic;
 }
 
 html[data-theme="light"] .admonitionblock.warning {
   background-color: hsl(var(--warn), 0.15);
-  border: 1px solid hsl(var(--warn), 0.2);
+  border: 1px solid hsl(var(--warn), 0.1);
 }
 
 html[data-theme="light"] .warning svg {
@@ -932,7 +931,7 @@ html[data-theme="light"] .warning svg {
 
 html[data-theme="light"] .admonitionblock.important {
   background-color: hsl(var(--important), 0.1);
-  border: 1px solid hsl(var(--important), 0.1);
+  border: 1px solid hsl(var(--important), 0.06);
 }
 
 html[data-theme="light"] .important svg {
@@ -941,7 +940,7 @@ html[data-theme="light"] .important svg {
 
 html[data-theme="light"] .admonitionblock.tip {
   background-color: hsl(var(--tip), 0.1);
-  border: 1px solid hsl(var(--tip), 0.1);
+  border: 1px solid hsl(var(--tip), 0.08);
 }
 
 html[data-theme="light"] .tip svg {
@@ -949,8 +948,8 @@ html[data-theme="light"] .tip svg {
 }
 
 html[data-theme="light"] .admonitionblock.note {
-  background-color: hsl(var(--note), 0.1);
-  border: 1px solid hsl(var(--note), 0.2);
+  background-color: hsl(var(--note), 0.15);
+  border: 1px solid hsl(var(--note), 0.1);
 }
 
 html[data-theme="light"] .note svg {
@@ -982,8 +981,8 @@ html[data-theme="dark"] pre.pre-wrap-white-space {
 
 html[data-theme="dark"] blockquote {
   background-color: hsl(var(--bq), 0.05);
+  border: 1px solid hsl(var(--bq), 0.02);
   color: hsl(var(--bq), 0.5);
-  border: 1px solid hsl(var(--bq), 0.08);
 }
 
 html[data-theme="dark"] blockquote::before {
@@ -997,8 +996,8 @@ html[data-theme="dark"] blockquote .is-paragraph:first-child {
 
 html[data-theme="dark"] .verse {
   background-color: hsl(var(--verse), 0.05);
+  border: 1px solid hsl(var(--verse), 0.02);
   color: hsl(var(--verse), 0.6);
-  border: 1px solid hsl(var(--verse), 0.08);
   font-style: italic;
 }
 
@@ -1010,8 +1009,8 @@ html[data-theme="dark"]
   > div
   > div.flex.flex-row.admonitionblock.align-items.warning {
   background-color: hsl(var(--warn), 0.05);
+  border: 1px solid hsl(var(--warn), 0.02);
   color: hsl(var(--warn), 0.6);
-  border: 1px solid hsl(var(--warn), 0.08);
 }
 
 html[data-theme="dark"] .warning svg {
@@ -1020,8 +1019,8 @@ html[data-theme="dark"] .warning svg {
 
 html[data-theme="dark"] .admonitionblock.important {
   background-color: hsl(var(--important), 0.05);
+  border: 1px solid hsl(var(--important), 0.02);
   color: hsl(var(--important), 0.6);
-  border: 1px solid hsl(var(--important), 0.08);
 }
 
 html[data-theme="dark"] .important svg {
@@ -1030,8 +1029,8 @@ html[data-theme="dark"] .important svg {
 
 html[data-theme="dark"] .admonitionblock.tip {
   background-color: hsl(var(--tip), 0.05);
+  border: 1px solid hsl(var(--tip), 0.02);
   color: hsl(var(--tip), 0.6);
-  border: 1px solid hsl(var(--tip), 0.08);
 }
 
 html[data-theme="dark"] .tip svg {
@@ -1040,8 +1039,8 @@ html[data-theme="dark"] .tip svg {
 
 html[data-theme="dark"] .admonitionblock.note {
   background-color: hsl(var(--note), 0.05);
+  border: 1px solid hsl(var(--note), 0.02);
   color: hsl(var(--note), 0.6);
-  border: 1px solid hsl(var(--note), 0.08);
 }
 
 html[data-theme="dark"] .note svg {
@@ -1050,8 +1049,8 @@ html[data-theme="dark"] .note svg {
 
 html[data-theme="dark"] .admonitionblock.caution {
   background-color: hsl(var(--caution), 0.05);
+  border: 1px solid hsl(var(--caution), 0.02);
   color: hsl(var(--caution), 0.6);
-  border: 1px solid hsl(var(--caution), 0.08);
 }
 
 html[data-theme="dark"] .caution svg {
@@ -1060,8 +1059,8 @@ html[data-theme="dark"] .caution svg {
 
 html[data-theme="dark"] .admonitionblock.pinned {
   background-color: hsl(var(--pinned), 0.05);
+  border: 1px solid hsl(var(--pinned), 0.02);
   color: hsl(var(--pinned), 0.6);
-  border: 1px solid hsl(var(--pinned), 0.08);
 }
 
 html[data-theme="dark"] .pinned svg {
@@ -1112,9 +1111,9 @@ hr {
 
 html[data-theme="dark"] .ui__button {
   background-color: hsl(var(--ui-button-bg), 0.05);
+  border: 1px solid hsl(var(--ui-button-color), 0.1);
   border-radius: var(--radius-md);
   color: hsl(var(--ui-button-color));
-  border: 1px solid hsl(var(--ui-button-color), 0.1);
 }
 
 html[data-theme="dark"] .cp__plugins-page .secondary-tabs button.active {
@@ -1124,23 +1123,23 @@ html[data-theme="dark"] .cp__plugins-page .secondary-tabs button.active {
 
 html[data-theme="light"] .ui__button {
   background-color: hsl(var(--ui-button-bg), 0.15);
+  border: 1px solid hsl(var(--ui-button-color), 0.5);
   border-radius: var(--radius-md);
   color: hsl(var(--ui-button-color));
-  border: 1px solid hsl(var(--ui-button-color), 0.5);
 }
 
 html[data-theme="light"] .cp__plugins-page .secondary-tabs button.active,
 html[data-theme="light"] .cp__plugins-page .tabs .ui__button.active {
   background: hsl(var(--ui-button-bg));
-  color: var(--ls-link-text-color);
   border: 1px solid hsl(var(--ui-button-color));
+  color: var(--ls-link-text-color);
 }
 
 html[data-theme="dark"] .cp__plugins-page .secondary-tabs button.active,
 html[data-theme="dark"] .cp__plugins-page .tabs .ui__button.active {
   background: hsl(var(--ui-button-bg));
-  color: var(--inverted-text);
   border: 1px solid hsl(var(--ui-button-color));
+  color: var(--inverted-text);
 }
 
 html[data-theme="dark"] .ui__button.active,
@@ -1153,10 +1152,10 @@ html[data-theme="dark"] .cp__plugins-page .tabs .ui__button:hover {
 
 html[data-theme="light"] .ui__button.active,
 html[data-theme="light"] .ui__button:hover,
-html[data-theme="dark"] .cp__plugins-page .secondary-tabs button:hover,
-html[data-theme="dark"] .cp__plugins-page .tabs .ui__button:hover {
+html[data-theme="light"] .cp__plugins-page .secondary-tabs button:hover,
+html[data-theme="light"] .cp__plugins-page .tabs .ui__button:hover {
   background-color: var(--ui-button-bg-hover);
-  color: var(--white);
+  color: var(--inverted-text) !important;
 }
 
 a.button.active,
@@ -1203,7 +1202,7 @@ input {
 .color-level{
  border-radius: var(--radius-md);
  box-shadow: var(--box-shadow-sm);
- outline: 1px solid var(--transparent)
+ outline: 1px solid var(--transparent);
 
 }
 html[data-theme="light"] .block-properties,
@@ -1285,9 +1284,9 @@ html[data-theme="dark"] .ui__modal .cards-title {
   --cornflower: 209, 87%, 73%;
   border-bottom: 1px ridge hsl(var(--cornflower), 0.7);
   border-radius: 0;
+  display: inline;
   font-size: inherit;
   padding: 0 4px;
-  display: inline;
 }
 
 .block-ref > div div {
@@ -1295,9 +1294,9 @@ html[data-theme="dark"] .ui__modal .cards-title {
 }
 
 .block-ref:hover {
+  border-radius: var(--radius-sm);
   color: inherit;
   transition: var(--transition);
-  border-radius: var(--radius-sm);
 }
 
 html[data-theme="dark"] .block-ref:hover {
@@ -1385,10 +1384,10 @@ html[data-theme="light"] .cp__right-sidebar-inner .resizer:hover {
 
 div[data-refs-self*="card"],
 .cards-review {
-  outline: 1px solid var(--ls-border-color);
   background-color: var(--color-level-1);
-  box-shadow: var(--box-shadow-lg);
   border-radius: var(--radius-none);
+  box-shadow: var(--box-shadow-lg);
+  outline: 1px solid var(--ls-border-color);
 }
 .panel-content div[data-refs-self*="card"] {
   border: 1px solid var(--ls-border-color);
@@ -1504,8 +1503,8 @@ html[data-theme="light"] .keyboard-shortcut > code {
 html[data-theme="dark"] .keyboard-shortcut > code {
   border-color: hsl(var(--kbd-border), 1);
   box-shadow: inset 0 -1px 0 var(--box-shadow-sm);
-  text-shadow: 0 1px 0 hsl(var(--kbd-color-dark), 1);
   color: var(--ls-primary-text-color);
+  text-shadow: 0 1px 0 hsl(var(--kbd-color-dark), 1);
 }
 
 /* Settings & Marketplace END */
@@ -1516,8 +1515,8 @@ html[data-theme="dark"] .keyboard-shortcut > code {
   background-color: var(--codemirror-wrapper);
   /* border: 1px solid var(--ls-border-color); */
   border-radius: var(--radius-none);
-  margin-top: 6px;
   box-shadow: var(--box-shadow-sm);
+  margin-top: 6px;
   /* opacity: var(--opacity-sm); */
 }
 
@@ -1529,10 +1528,10 @@ html[data-theme="dark"] .keyboard-shortcut > code {
   border-top-right-radius: var(--radius-none);
   color: var(--inverted-text);
   margin-top: 0;
+  opacity: var(--opacity-md);
   padding: 4px 8px;
   right: 0;
   top: 0;
-  opacity: var(--opacity-md);
 }
 
 /* Code Block END */
@@ -1708,26 +1707,26 @@ html[data-theme="dark"] .keyboard-shortcut > code {
 
 a[href*="twitter.com/"] {
   background: url(https://twitter.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="duckduckgo.com/"] {
   background: url(https://duckduckgo.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="youtube.com/"] {
   background: url(https://youtube.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="google.com/"] {
   background: url(https://google.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 /*
 html[data-theme="dark"] a[href*="github.com/"] {
@@ -1744,109 +1743,109 @@ html[data-theme="light"] a[href*="github.com/"] {
 
 a[href*="css-tricks.com/"] {
   background: url(https://css-tricks.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="w3schools.com/"] {
   background: url(https://w3schools.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="flaremetrics.io/"] {
   background: url(https://flaremetrics.io/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="bitcoin.org/"] {
   background: url(https://bitcoin.org/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="gitlab.com/"] {
   background: url(https://gitlab.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="vimeo.com/"] {
   background: url(https://vimeo.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="bitbucket.org/"] {
   background: url(https://bitbucket.org/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="dev.to/"] {
   background: url(https://dev.to/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 a[href*="developer.mozilla.org/"] {
   background: url(https://developer.mozilla.org/favicon.ico) no-repeat left
     center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="opencollective.com/"] {
   background: url(https://opencollective.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="webdevtrick.com/"] {
   background: url(https://webdevtrick.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="wikipedia.org/"] {
   background: url(https://wikipedia.org/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="substack.com/"] {
   background: url(https://substack.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="hackernoon.com/"] {
   background: url(https://hackernoon.com/favicon.ico) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 a[href*="insights.glassnode.com/"] {
   background: url(https://insights.glassnode.com/favicon.png) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 html[data-theme="light"] a[href*="medium.com/"] {
   background: url(./assets/medium.svg) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 html[data-theme="dark"] a[href*="medium.com/"] {
   background: url(./assets/medium-light.svg) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 a[href*="atlassian.com/"] {
   background: url(https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/assets/img/favicons/atlassian/apple-touch-icon-57x57.png) no-repeat left center;
-  padding-left: 19px;
   background-size: 16px 16px;
+  padding-left: 19px;
 }
 
 /* START Mobile Application Adjustments */
@@ -1868,16 +1867,16 @@ border-left: 1px solid var(--mobile-toolbar-border);
 
 .templater-btn{
   background-color: hsl(var(--ui-button-bg), 0.05);
+  border: 1px solid hsl(var(--ui-button-color), 0.1);
   border-radius: var(--radius-md);
   color: hsl(var(--ui-button-color));
-  border: 1px solid hsl(var(--ui-button-color), 0.1);
 	padding: .2em .8em;
 }
 
 .templater-btn:hover{
   background: hsl(var(--ui-button-bg));
-  color: var(--inverted-text);
   border: 1px solid hsl(var(--ui-button-color));
+  color: var(--inverted-text);
 	cursor: pointer;
 }
 
@@ -1886,8 +1885,8 @@ border-left: 1px solid var(--mobile-toolbar-border);
 /* START TOC Generatorv Plugin */
 .kef-tocgen-backtop{
   background-color: hsl(var(--ui-button-bg), 0.05);
-  color: hsl(var(--ui-button-color));
   border: 1px solid hsl(var(--ui-button-color), 0.2);
+  color: hsl(var(--ui-button-color));
 }
 
 .kef-tocgen-icon-backtop{
