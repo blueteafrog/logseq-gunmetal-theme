@@ -1988,18 +1988,18 @@ a[href*="atlassian.com/"] {
 /* TOC  TOC Generatorv Plugin END */
 /* START Plugin Wrap */
 span[data-ref="#red"] + mark {
-  background: none;
+  background: none !important;
 	text-decoration-color: hsl(338, 80%, 80%, 0.8);
 }
 
 span[data-ref="#green"] + mark {
-  background: none;
+  background: none !important;
 	text-decoration-color: hsl(173, 60%, 62%, 0.8);
 
 }
 
 span[data-ref="#blue"] + mark {
-  background: none;
+  background: none !important;
 	text-decoration-color: hsl(209, 87%, 73%, 0.8);
 
 }
@@ -2053,3 +2053,4 @@ html[data-theme="light"] span[data-ref="$blue"] + mark {
 }
 /* Plugin Wrap END */
 /* Plugins END */
+
