@@ -23,26 +23,19 @@
 
 	--ls-font-family: Inter;
 	--ls-page-text-size: 1em;
-
 	--ls-page-title-size: 34px;
-
 	--ls-main-content-max-width: 940px;
-
 	--radius-none: 0;
 	--radius-sm: 2px;
 	--radius-md: 3px;
 	--radius-lg: 6px;
-
 	--transparent: transparent;
 	--transition: all 0.3s ease-in-out;
-
 	--overlay: hsl(219, 15%, 4%);
-
 	--opacity-none: 1;
 	--opacity-sm: 0.8;
 	--opacity-md: 0.6;
 	--opacity-lg: 0.4;
-
 	--white: #fff;
 	--cream: 43, 98%, 82%;
 	--spring-green: 144, 79%, 64%;
@@ -63,118 +56,83 @@
 .dark-theme,
 html[data-theme="dark"] {
 	--aqua: 180, 68%, 71%;
-
 	--red: hsl(5, 100%, 82%);
 	--orange: hsl(33, 100%, 82%);
 	--green: hsl(168, 100%, 82%);
 	--blue: hsl(188, 100%, 82%);
-
 	--ls-primary-background-color: hsl(213, 20%, 13%);
 	--ls-secondary-background-color: hsl(213, 20%, 13%);
 	--ls-tertiary-background-color: hsl(213, 20%, 13%);
 	--ls-quaternary-background-color: hsl(213, 20%, 13%);
-
 	--ls-table-tr-even-background-color: var(--transparent);
 	--ls-table-tr-odd-background-color: hsl(213, 20%, 20%, 0.3);
-
 	--ls-active-primary-color: hsl(168, 69%, 84%, 0.8);
 	--ls-active-secondary-color: hsl(168, 69%, 74%, 0.8);
-
 	--ls-block-properties-background-color: hsl(213, 20%, 10%);
 	--ls-page-properties-background-color: hsl(213, 20%, 10%);
-
 	--ls-search-background-color: var(--ls-primary-background-color);
-
 	--ls-border-color: hsl(213, 20%, 18%);
 	--ls-secondary-border-color: var(--ls-border-color);
 	--ls-guideline-color: var(--ls-border-color);
-
 	--ls-menu-hover-color: var(--ls-a-chosen-bg);
-
 	--ls-primary-text-color: hsl(211, 18%, 67%);
 	--ls-secondary-text-color: hsl(211, 18%, 60%);
 	--ls-title-text-color: var(--ls-primary-text-color);
-
 	--ls-link-text-color: hsl(187, 22%, 56%);
 	--ls-link-text-hover-color: hsl(185, 100%, 82%, 0.7);
-
 	--ls-link-ref-text-color: var(--ls-link-text-color);
 	--ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
-
 	--ls-slide-background-color: hsl(242, 8%, 8%);
-
 	--ls-block-bullet-border-color: hsl(213, 20%, 69%, 0.1);
 	--ls-block-bullet-color: hsl(213, 20%, 30%);
 	--ls-block-highlight-color: hsl(216, 29%, 18%);
-
 	--ls-page-checkbox-color: hsl(188, 45%, 78%);
 	--ls-page-checkbox-border-color: hsl(188, 45%, 68%, 0.8);
-
 	--ls-page-inline-code-color: 203, 13%, 60%;
 	--ls-page-inline-code-bg-color: 213, 20%, 14%;
-
 	--ls-scrollbar-foreground-color: rgba(228, 235, 244, 0.1);
 	--ls-scrollbar-background-color: rgba(0, 0, 0, 0.05);
 	--ls-scrollbar-thumb-hover-color: rgba(228, 235, 244, 0.3);
-
 	--ls-head-text-color: var(--ls-primary-text-color);
-
 	--ls-icon-color: hsl(213, 20%, 37%);
 	--ls-search-icon-color: var(--ls-icon-color);
 	--ls-a-chosen-bg: hsl(213, 20%, 10%);
-
 	--color-level-1: hsl(213, 20%, 11%);
 	--color-level-2: hsl(213, 20%, 12%);
 	--color-level-3: hsl(213, 20%, 13%);
 	--color-level-4: hsl(213, 20%, 14%);
 	--color-level-5: hsl(213, 20%, 15%);
 	--color-level-6: hsl(213, 20%, 16%);
-
 	--cl-border-shade1: hsl(213, 20%, 60%, 0.2);
 	--cl-border-shade2: hsl(213, 20%, 50%, 0.2);
 	--cl-border-shade3: hsl(213, 20%, 40%, 0.2);
 	--cl-border-shade4: hsl(213, 20%, 30%, 0.2);
 	--cl-border-shade5: hsl(213, 20%, 20%, 0.2);
 	--cl-border-shade6: hsl(213, 20%, 10%, 0.2);
-
 	--ui-button-bg: 202, 76%, 79%;
 	--ui-button-color: 202, 76%, 75%;
 	--ui-button-bg-hover: hsl(202, 76%, 75%);
-
 	--left-sb-bg-color: hsl(213, 20%, 13%);
-	--left-sb-bg-color-hover: hsl(213, 20%, 12%);
-
+	--left-sb-bg-color-hover: hsl(213, 20%, 16%);
 	--left-sb-txt-color: hsl(210, 10%, 51%);
 	--left-sb-txt-color-hover: hsl(210, 19%, 73%);
-
 	--inverted-text: #1c2026;
 	--code-lang: hsl(214, 21%, 16%);
-
 	--external-link-color: hsl(7, 32%, 70%);
 	--external-link-color-hover: hsl(163, 36%, 65%);
-
 	--highlighter: hsl(26, 100%, 90%);
 	--bracket-highligther: hsl(215, 16%, 25%);
 	--highlighter-text: hsl(219, 15%, 15%);
-
-	--selection: hsl(209, 87%, 73%, 0.1);
-
+	--selection: hsl(216, 45%, 32%, 0.6);
 	--page-ref-bg-hover: 209, 87%, 73%;
 	--properties-border: 209, 17%, 88%;
-
 	--caret-color: hsl(171, 100%, 58%);
-
 	--pdf-asset-color: hsl(163, 36%, 65%);
-
 	--card-title-bg-color: hsl(213, 20%, 11%);
-
 	--codemirror-wrapper: #161b22;
-
 	--mobile-toolbar-border: hsl(213, 20%, 18%, 0.8);
-
 	--box-shadow-sm: rgba(0, 0, 0, 0.15) 0 1px 2px 0;
 	--box-shadow-lg: rgba(0, 0, 0, 0.15) 0 4px 6px 0;
-
 	--drop-shadow-sm: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.36));
 	--drop-shadow-lg: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.36));
 }
@@ -182,124 +140,85 @@ html[data-theme="dark"] {
 .white-theme,
 html[data-theme="light"] {
 	--aqua: 209, 87%, 73%;
-
 	--red: #e75154;
 	--orange: #ffa542;
 	--green: #2a9d8f;
 	--blue: #5397d3;
-
 	--ls-primary-background-color: hsl(208, 33%, 99%);
 	--ls-secondary-background-color: hsl(208, 33%, 98%);
 	--ls-tertiary-background-color: hsl(208, 33%, 99%);
 	--ls-quaternary-background-color: hsl(208, 33%, 98%);
-
 	--ls-table-tr-even-background-color: var(--transparent);
-
 	--ls-table-tr-odd-background-color: hsl(208, 33%, 97%);
-
-	--ls-active-primary-color: hsl(199, 66%, 40%);
-	--ls-active-secondary-color: hsl(199, 70%, 35%);
-
+	--ls-active-primary-color: hsl(210, 73%, 32%);
+	--ls-active-secondary-color: hsl(210, 73%, 35%);
 	--ls-block-properties-background-color: hsl(208, 33%, 97%);
 	--ls-page-properties-background-color: hsl(208, 33%, 97%);
-
 	--ls-search-background-color: var(--ls-primary-background-color);
-
 	--ls-border-color: hsl(209, 17%, 88%);
 	--ls-secondary-border-color: hsl(209, 17%, 86%);
 	--ls-guideline-color: var(--ls-border-color);
-
 	--ls-menu-hover-color: var(--ls-a-chosen-bg);
-
 	--ls-primary-text-color: hsl(213, 12%, 20%);
 	--ls-secondary-text-color: hsl(213, 12%, 16%);
 	--ls-title-text-color: var(--ls-primary-text-color);
-
-	--ls-link-text-color: hsl(210, 66%, 42%);
-	--ls-link-text-hover-color: hsl(210, 66%, 42%);
+	--ls-link-text-color: hsl(210, 73%, 32%);
+	--ls-link-text-hover-color: hsl(210, 73%, 35%);
 	--ls-link-ref-text-color: var(--ls-link-text-color);
 	--ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
-
 	/* --ls-tag-text-color: #3d5866;
 	  --ls-tag-text-hover-color: #2b4451; */
-
 	--ls-slide-background-color: hsl(0, 0%, 100%);
-
 	--ls-block-bullet-border-color: hsl(202, 22%, 90%);
 	--ls-block-bullet-color: hsl(200, 13%, 55%);
-	--ls-block-highlight-color: hsl(203, 100%, 74%, 0.6);
-
+	--ls-block-highlight-color: hsl(203, 98%, 84%);
 	--ls-page-checkbox-color: hsl(206, 41%, 57%);
 	--ls-page-checkbox-border-color: hsl(206, 41%, 57%);
-
 	--ls-page-inline-code-color: 198, 34%, 15%;
 	--ls-page-inline-code-bg-color: 208, 33%, 97%;
-
 	--ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.2);
 	--ls-scrollbar-background-color: rgba(0, 0, 0, 0.1);
 	--ls-scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.3);
-
 	--ls-head-text-color: var(--ls-primary-text-color);
-
 	--ls-icon-color: hsl(198, 13%, 68%);
 	--ls-search-icon-color: var(--ls-icon-color);
-
 	--ls-a-chosen-bg: hsl(208, 33%, 94%);
-
 	--color-level-1: hsl(208, 33%, 98%);
 	--color-level-2: hsl(208, 33%, 97%);
 	--color-level-3: hsl(208, 33%, 98%);
 	--color-level-4: hsl(208, 33%, 97%);
 	--color-level-5: hsl(208, 33%, 98%);
 	--color-level-6: hsl(208, 33%, 97%);
-
 	--cl-border-shade1: hsl(202, 22%, 89%, 0.5);
 	--cl-border-shade2: hsl(202, 22%, 88%, 0.5);
 	--cl-border-shade3: hsl(202, 22%, 87%, 0.5);
 	--cl-border-shade4: hsl(202, 22%, 86%, 0.5);
 	--cl-border-shade5: hsl(202, 22%, 85%, 0.5);
 	--cl-border-shade6: hsl(202, 22%, 84%, 0.5);
-
 	--ui-button-bg: 202, 76%, 79%;
 	--ui-button-color: 202, 76%, 45%;
 	--ui-button-bg-hover: hsl(202, 76%, 65%);
-
 	--left-sb-bg-color: hsl(213, 20%, 13%);
-	--left-sb-bg-color-hover: hsl(213, 20%, 12%);
-
+	--left-sb-bg-color-hover: hsl(213, 20%, 16%);
 	--code-lang: hsl(204, 41%, 93%);
-
 	--left-sb-txt-color: hsl(210, 10%, 51%);
 	--left-sb-txt-color-hover: hsl(210, 19%, 73%);
-
 	--external-link-color: hsl(14, 86%, 53%);
 	--external-link-color-hover: hsl(78, 50%, 48%);
-
 	--highlighter: hsl(41, 100%, 69%, 0.8);
 	--bracket-highligther: hsl(242, 1%, 83%);
-
 	--highlighter-text: hsl(202, 33%, 17%);
-
 	--selection: hsl(212, 99%, 85%, 0.8);
-
 	--page-ref-bg-hover: 209, 87%, 73%;
 	--properties-border: 209, 17%, 88%;
-
 	--caret-color: hsl(223, 76%, 0%);
-
 	--pdf-asset-color: hsl(14, 86%, 53%);
-
 	--card-title-bg-color: hsl(208, 33%, 96%);
-
 	--codemirror-wrapper: #f6f8fa;
-
 	--example-admon: hsl(225, 40%, 98%);
-
 	--mobile-toolbar-border: hsl(209, 17%, 88%, 0.8);
-
 	--box-shadow-sm: rgba(23, 42, 53, 0.1) 0 1px 2px 0;
 	--box-shadow-lg: rgba(23, 40, 49, 0.1) 0 4px 6px 0;
-
 	--drop-shadow-sm: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 	--drop-shadow-lg: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
@@ -777,7 +696,10 @@ html[data-theme="light"] .cp__header>.l a {
 	color: var(--left-sb-txt-color) !important;
 }
 
+.left-sidebar-inner a.item.active,
+.left-sidebar-inner a.item:active,
 .left-sidebar-inner .nav-content-item>.header:hover,
+.left-sidebar-inner .nav-content-item .header:hover,
 #left-sidebar a:hover {
 	background-color: var(--left-sb-bg-color-hover);
 	color: var(--left-sb-txt-color-hover) !important;
@@ -837,13 +759,13 @@ html[data-theme="dark"] .cp__right-sidebar {
 	background-color: var(--ls-secondary-background-color);
 }
 
-.left-sidebar-inner .new-page {
-	background-color: var(--left-sb-bg-color);
+.left-sidebar-inner .new-page-link {
+	background-color: var(--left-sb-bg-color-hover);
 }
 
 @media (min-width: 640px) {
-	.left-sidebar-inner .new-page {
-		background-color: var(--left-sb-bg-color);
+	.left-sidebar-inner .new-page-link {
+		background-color: var(--left-sb-bg-color-hover);
 	}
 }
 
@@ -1116,8 +1038,8 @@ html[data-theme="dark"] .pinned svg {
 /* START MISC */
 
 mark {
-	background: none;
-	color: inherit;
+	background: none !important;
+	color: inherit !important;
 	font-size: inherit;
 	/* opacity: var(--opacity-sm); */
 	text-decoration: 4px underline var(--highlighter);
@@ -1373,20 +1295,22 @@ html[data-theme="light"] .block-ref:hover {
 }
 
 .open-block-ref-link,
-.cp__sidebar-help-btn {
-	--misc-border: 214, 14%, 40%;
-	--misc-bg-color: 214, 14%, 10%;
+.cp__sidebar-help-btn,
+.cp__sidebar-help-btn>.inner {
+	--misc-border: 38, 53, 75;
+	--misc-bg-color: 21, 28, 41;
+	border-radius: 100%;
 }
 
 html[data-theme="light"] .open-block-ref-link,
-html[data-theme="light"] .cp__sidebar-help-btn {
+html[data-theme="light"] .cp__sidebar-help-btn>.inner {
 	background-color: hsl(var(--misc-bg-color), 0.03);
 	border: 1px solid hsl(var(--misc-border), 0.2);
 	color: var(--ls-primary-text-color);
 }
 
 html[data-theme="dark"] .open-block-ref-link,
-html[data-theme="dark"] .cp__sidebar-help-btn {
+html[data-theme="dark"] .cp__sidebar-help-btn>.inner {
 	background-color: hsl(var(--misc-bg-color), 1);
 	border: 1px solid hsl(var(--misc-border), 0.3);
 	color: var(--ls-primary-text-color);
@@ -1774,7 +1698,6 @@ html[data-theme="dark"] .keyboard-shortcut>code {
 .cm-s-solarized.cm-s-light .cm-variable-3,
 .cm-s-solarized.cm-s-light .cm-type {
 	color: #848dde;
-	color:
 }
 
 .cm-s-solarized.cm-s-light .cm-property {
@@ -2188,9 +2111,7 @@ a[href*="atlassian.com/"] {
 }
 
 /* TOC  TOC Generatorv Plugin END */
-
 /* START Plugin Wrap */
-
 span[data-ref="#red"],
 span[data-ref="#green"],
 span[data-ref="#blue"],
@@ -2205,32 +2126,37 @@ span[data-ref="$grey"] {
 }
 
 span[data-ref="#red"]+mark {
+	color: inherit !important;
 	background: none !important;
-	text-decoration-color: hsl(338, 80%, 80%, 0.8);
+	text-decoration-color: hsl(338, 80%, 80%) !important;
 }
 
 span[data-ref="#green"]+mark {
+	color: inherit !important;
 	background: none !important;
-	text-decoration-color: hsl(173, 60%, 62%, 0.8);
+	text-decoration-color: hsl(173, 60%, 62%) !important;
 }
 
 span[data-ref="#blue"]+mark {
+	color: inherit !important;
 	background: none !important;
-	text-decoration-color: hsl(209, 87%, 73%, 0.8);
+	text-decoration-color: hsl(209, 87%, 73%) !important;
 }
 
 span[data-ref="#purple"]+mark {
+	color: inherit !important;
 	background: none !important;
-	text-decoration-color: hsl(249, 100%, 85%, 0.8);
+	text-decoration-color: hsl(249, 100%, 85%) !important;
 }
 
 span[data-ref="#grey"]+mark {
+	color: inherit !important;
 	background: none !important;
-	text-decoration-color: hsl(214, 29%, 68%, 0.8);
+	text-decoration-color: hsl(214, 29%, 68%) !important;
 }
 
 html[data-theme="dark"] span[data-ref="$red"]+mark {
-	color: hsl(338, 80%, 70%, 0.8);
+	color: hsl(338, 80%, 70%) !important;
 	background: unset;
 	padding: 0;
 	border-radius: 0;
@@ -2238,7 +2164,7 @@ html[data-theme="dark"] span[data-ref="$red"]+mark {
 }
 
 html[data-theme="dark"] span[data-ref="$green"]+mark {
-	color: hsl(173, 60%, 62%, 0.8);
+	color: hsl(173, 60%, 62%) !important;
 	background: unset;
 	padding: 0;
 	border-radius: 0;
@@ -2246,7 +2172,7 @@ html[data-theme="dark"] span[data-ref="$green"]+mark {
 }
 
 html[data-theme="dark"] span[data-ref="$blue"]+mark {
-	color: hsl(209, 87%, 73%, 0.8);
+	color: hsl(209, 87%, 73%) !important;
 	background: unset;
 	padding: 0;
 	border-radius: 0;
@@ -2254,7 +2180,7 @@ html[data-theme="dark"] span[data-ref="$blue"]+mark {
 }
 
 html[data-theme="dark"] span[data-ref="$purple"]+mark {
-	color: hsl(249, 100%, 85%, 0.8);
+	color: hsl(249, 100%, 85%) !important;
 	background: unset;
 	padding: 0;
 	border-radius: 0;
@@ -2262,7 +2188,7 @@ html[data-theme="dark"] span[data-ref="$purple"]+mark {
 }
 
 html[data-theme="dark"] span[data-ref="$grey"]+mark {
-	color: hsl(214, 29%, 68%, 0.8);
+	color: hsl(214, 29%, 68%) !important;
 	background: unset;
 	padding: 0;
 	border-radius: 0;
@@ -2270,7 +2196,7 @@ html[data-theme="dark"] span[data-ref="$grey"]+mark {
 }
 
 html[data-theme="light"] span[data-ref="$red"]+mark {
-	color: hsl(338, 80%, 40%, 0.8);
+	color: hsl(338, 80%, 40%) !important;
 	background: unset;
 	padding: 0;
 	border-radius: 0;
@@ -2278,7 +2204,7 @@ html[data-theme="light"] span[data-ref="$red"]+mark {
 }
 
 html[data-theme="light"] span[data-ref="$green"]+mark {
-	color: hsl(173, 60%, 32%, 0.8);
+	color: hsl(173, 60%, 32%) !important;
 	background: unset;
 	padding: 0;
 	border-radius: 0;
@@ -2286,7 +2212,7 @@ html[data-theme="light"] span[data-ref="$green"]+mark {
 }
 
 html[data-theme="light"] span[data-ref="$blue"]+mark {
-	color: hsl(209, 87%, 43%, 0.8);
+	color: hsl(209, 87%, 43%) !important;
 	background: unset;
 	padding: 0;
 	border-radius: 0;
@@ -2294,7 +2220,7 @@ html[data-theme="light"] span[data-ref="$blue"]+mark {
 }
 
 html[data-theme="light"] span[data-ref="$purple"]+mark {
-	color: hsl(249, 100%, 75%, 0.8);
+	color: hsl(249, 100%, 75%) !important;
 	background: unset;
 	padding: 0;
 	border-radius: 0;
@@ -2302,7 +2228,7 @@ html[data-theme="light"] span[data-ref="$purple"]+mark {
 }
 
 html[data-theme="light"] span[data-ref="$grey"]+mark {
-	color: hsl(214, 29%, 48%, 0.8);
+	color: hsl(214, 29%, 48%) !important;
 	background: unset;
 	padding: 0;
 	border-radius: 0;
