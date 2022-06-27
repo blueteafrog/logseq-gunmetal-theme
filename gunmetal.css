@@ -9,264 +9,264 @@
 /*@import for "Recursive" Font If you would like to use it, change `--ls-font-family: Inter` to `--ls-font-family: Recursive` */
 
 :root {
-    /* START Default Variable Font Settings for Recursive https://www.recursive.design/ for details */
-    --MONO: 0;
-    /* Monospace  0 or 1  setting to 1 is monospace*/
-    --CASL: 0;
-    /* Casual  0 to 1 */
-    --slnt: 0;
-    /* Upright  0 to -15 */
-    --CRSV: 0.5;
-    /* Auto Cursive settings include 0 to 1 */
+      /* START Default Variable Font Settings for Recursive https://www.recursive.design/ for details */
+      --MONO: 0;
+      /* Monospace  0 or 1  setting to 1 is monospace*/
+      --CASL: 0;
+      /* Casual  0 to 1 */
+      --slnt: 0;
+      /* Upright  0 to -15 */
+      --CRSV: 0.5;
+      /* Auto Cursive settings include 0 to 1 */
 
-    /* Default Variable Font Settings END */
+      /* Default Variable Font Settings END */
 
-    --ls-font-family: Inter;
-    --ls-page-text-size: 1em;
-    --ls-page-title-size: 34px;
-    --ls-main-content-max-width: 940px;
-    --radius-none: 0;
-    --radius-sm: 2px;
-    --radius-md: 3px;
-    --radius-lg: 6px;
-    --transparent: transparent;
-    --transition: all 0.3s ease-in-out;
-    --overlay: hsl(219, 15%, 4%);
-    --opacity-none: 1;
-    --opacity-sm: 0.8;
-    --opacity-md: 0.6;
-    --opacity-lg: 0.4;
-    --white: #fff;
-    --cream: 43, 98%, 82%;
-    --spring-green: 144, 79%, 64%;
-    --cornflower: 209, 87%, 73%;
-    --denim: 210, 66%, 42%;
+      --ls-font-family: Inter;
+      --ls-page-text-size: 1em;
+      --ls-page-title-size: 34px;
+      --ls-main-content-max-width: 940px;
+      --radius-none: 0;
+      --radius-sm: 2px;
+      --radius-md: 3px;
+      --radius-lg: 6px;
+      --transparent: transparent;
+      --transition: all 0.3s ease-in-out;
+      --overlay: hsl(219, 15%, 4%);
+      --opacity-none: 1;
+      --opacity-sm: 0.8;
+      --opacity-md: 0.6;
+      --opacity-lg: 0.4;
+      --white: #fff;
+      --cream: 43, 98%, 82%;
+      --spring-green: 144, 79%, 64%;
+      --cornflower: 209, 87%, 73%;
+      --denim: 210, 66%, 42%;
 }
 
 @media (prefers-color-scheme: dark) {
-    html {
-        background-color: #21252c;
-    }
+      html {
+            background-color: #21252c;
+      }
 
-    html[data-theme="light"] {
-        background-color: transparent;
-    }
+      html[data-theme="light"] {
+            background-color: transparent;
+      }
 }
 
 .dark-theme,
 html[data-theme="dark"] {
-    --aqua: 180, 68%, 71%;
-    --red: hsl(5, 100%, 82%);
-    --orange: hsl(33, 100%, 82%);
-    --green: hsl(168, 100%, 82%);
-    --blue: hsl(188, 100%, 82%);
-    --ls-primary-background-color: hsl(213, 20%, 13%);
-    --ls-secondary-background-color: hsl(213, 20%, 13%);
-    --ls-tertiary-background-color: hsl(213, 20%, 13%);
-    --ls-quaternary-background-color: hsl(213, 20%, 13%);
-    --ls-table-tr-even-background-color: var(--transparent);
-    --ls-table-tr-odd-background-color: hsl(213, 20%, 20%, 0.3);
-    --ls-active-primary-color: hsl(168, 69%, 84%, 0.8);
-    --ls-active-secondary-color: hsl(168, 69%, 74%, 0.8);
-    --ls-block-properties-background-color: hsl(213, 20%, 10%);
-    --ls-page-properties-background-color: hsl(213, 20%, 10%);
-    --ls-search-background-color: var(--ls-primary-background-color);
-    --ls-border-color: hsl(213, 20%, 18%);
-    --ls-secondary-border-color: var(--ls-border-color);
-    --ls-guideline-color: var(--ls-border-color);
-    --ls-menu-hover-color: var(--ls-a-chosen-bg);
-    --ls-primary-text-color: hsl(211, 18%, 67%);
-    --ls-secondary-text-color: hsl(211, 18%, 60%);
-    --ls-title-text-color: var(--ls-primary-text-color);
-    --ls-link-text-color: hsl(187, 22%, 56%);
-    --ls-link-text-hover-color: hsl(185, 100%, 82%, 0.7);
-    --ls-link-ref-text-color: var(--ls-link-text-color);
-    --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
-    --ls-slide-background-color: hsl(242, 8%, 8%);
-    --ls-block-bullet-border-color: hsl(213, 20%, 69%, 0.1);
-    --ls-block-bullet-color: hsl(213, 20%, 30%);
-    --ls-block-highlight-color: hsl(216, 29%, 18%);
-    --ls-page-checkbox-color: hsl(188, 45%, 78%);
-    --ls-page-checkbox-border-color: hsl(188, 45%, 68%, 0.8);
-    --ls-page-inline-code-color: 203, 13%, 60%;
-    --ls-page-inline-code-bg-color: 213, 20%, 14%;
-    --ls-scrollbar-foreground-color: rgba(228, 235, 244, 0.1);
-    --ls-scrollbar-background-color: rgba(0, 0, 0, 0.05);
-    --ls-scrollbar-thumb-hover-color: rgba(228, 235, 244, 0.3);
-    --ls-head-text-color: var(--ls-primary-text-color);
-    --ls-icon-color: hsl(213, 20%, 37%);
-    --ls-search-icon-color: var(--ls-icon-color);
-    --ls-a-chosen-bg: hsl(213, 20%, 10%);
-    --color-level-1: hsl(213, 20%, 11%);
-    --color-level-2: hsl(213, 20%, 12%);
-    --color-level-3: hsl(213, 20%, 13%);
-    --color-level-4: hsl(213, 20%, 14%);
-    --color-level-5: hsl(213, 20%, 15%);
-    --color-level-6: hsl(213, 20%, 16%);
-    --cl-border-shade1: hsl(213, 20%, 60%, 0.2);
-    --cl-border-shade2: hsl(213, 20%, 50%, 0.2);
-    --cl-border-shade3: hsl(213, 20%, 40%, 0.2);
-    --cl-border-shade4: hsl(213, 20%, 30%, 0.2);
-    --cl-border-shade5: hsl(213, 20%, 20%, 0.2);
-    --cl-border-shade6: hsl(213, 20%, 10%, 0.2);
-    --ui-button-bg: 202, 76%, 79%;
-    --ui-button-color: 202, 76%, 75%;
-    --ui-button-bg-hover: hsl(202, 76%, 75%);
-    --left-sb-bg-color: hsl(213, 20%, 13%);
-    --left-sb-bg-color-hover: hsl(213, 20%, 16%);
-    --left-sb-txt-color: hsl(210, 10%, 51%);
-    --left-sb-txt-color-hover: hsl(210, 19%, 73%);
-    --inverted-text: #1c2026;
-    --code-lang: hsl(214, 21%, 16%);
-    --lang-border: hsl(214, 21%, 14%);
-    --external-link-color: hsl(7, 32%, 70%);
-    --external-link-color-hover: hsl(163, 36%, 65%);
-    --highlighter: hsl(26, 100%, 90%);
-    --bracket-highligther: hsl(215, 16%, 25%);
-    --highlighter-text: hsl(219, 15%, 15%);
-    --selection: hsl(216, 45%, 32%, 0.6);
-    --page-ref-bg-hover: 209, 87%, 73%;
-    --properties-border: 209, 17%, 88%;
-    --caret-color: hsl(171, 100%, 58%);
-    --pdf-asset-color: hsl(163, 36%, 65%);
-    --card-title-bg-color: hsl(213, 20%, 11%);
-    --codemirror-wrapper: #161b22;
-    --mobile-toolbar-border: hsl(213, 20%, 18%, 0.8);
-    --box-shadow-sm: rgba(0, 0, 0, 0.15) 0 1px 2px 0;
-    --box-shadow-lg: rgba(0, 0, 0, 0.15) 0 4px 6px 0;
-    --drop-shadow-sm: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.36));
-    --drop-shadow-lg: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.36));
+      --aqua: 180, 68%, 71%;
+      --red: hsl(5, 100%, 82%);
+      --orange: hsl(33, 100%, 82%);
+      --green: hsl(168, 100%, 82%);
+      --blue: hsl(188, 100%, 82%);
+      --ls-primary-background-color: hsl(213, 20%, 13%);
+      --ls-secondary-background-color: hsl(213, 20%, 13%);
+      --ls-tertiary-background-color: hsl(213, 20%, 13%);
+      --ls-quaternary-background-color: hsl(213, 20%, 13%);
+      --ls-table-tr-even-background-color: var(--transparent);
+      --ls-table-tr-odd-background-color: hsl(213, 20%, 20%, 0.3);
+      --ls-active-primary-color: hsl(168, 69%, 84%, 0.8);
+      --ls-active-secondary-color: hsl(168, 69%, 74%, 0.8);
+      --ls-block-properties-background-color: hsl(213, 20%, 10%);
+      --ls-page-properties-background-color: hsl(213, 20%, 10%);
+      --ls-search-background-color: var(--ls-primary-background-color);
+      --ls-border-color: hsl(213, 20%, 18%);
+      --ls-secondary-border-color: var(--ls-border-color);
+      --ls-guideline-color: var(--ls-border-color);
+      --ls-menu-hover-color: var(--ls-a-chosen-bg);
+      --ls-primary-text-color: hsl(211, 18%, 67%);
+      --ls-secondary-text-color: hsl(211, 18%, 60%);
+      --ls-title-text-color: var(--ls-primary-text-color);
+      --ls-link-text-color: hsl(187, 22%, 56%);
+      --ls-link-text-hover-color: hsl(185, 100%, 82%, 0.7);
+      --ls-link-ref-text-color: var(--ls-link-text-color);
+      --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
+      --ls-slide-background-color: hsl(242, 8%, 8%);
+      --ls-block-bullet-border-color: hsl(213, 20%, 69%, 0.1);
+      --ls-block-bullet-color: hsl(213, 20%, 30%);
+      --ls-block-highlight-color: hsl(216, 29%, 18%);
+      --ls-page-checkbox-color: hsl(188, 45%, 78%);
+      --ls-page-checkbox-border-color: hsl(188, 45%, 68%, 0.8);
+      --ls-page-inline-code-color: 203, 13%, 60%;
+      --ls-page-inline-code-bg-color: 213, 20%, 14%;
+      --ls-scrollbar-foreground-color: rgba(228, 235, 244, 0.1);
+      --ls-scrollbar-background-color: rgba(0, 0, 0, 0.05);
+      --ls-scrollbar-thumb-hover-color: rgba(228, 235, 244, 0.3);
+      --ls-head-text-color: var(--ls-primary-text-color);
+      --ls-icon-color: hsl(213, 20%, 37%);
+      --ls-search-icon-color: var(--ls-icon-color);
+      --ls-a-chosen-bg: hsl(213, 20%, 10%);
+      --color-level-1: hsl(213, 20%, 11%);
+      --color-level-2: hsl(213, 20%, 12%);
+      --color-level-3: hsl(213, 20%, 13%);
+      --color-level-4: hsl(213, 20%, 14%);
+      --color-level-5: hsl(213, 20%, 15%);
+      --color-level-6: hsl(213, 20%, 16%);
+      --cl-border-shade1: hsl(213, 20%, 60%, 0.2);
+      --cl-border-shade2: hsl(213, 20%, 50%, 0.2);
+      --cl-border-shade3: hsl(213, 20%, 40%, 0.2);
+      --cl-border-shade4: hsl(213, 20%, 30%, 0.2);
+      --cl-border-shade5: hsl(213, 20%, 20%, 0.2);
+      --cl-border-shade6: hsl(213, 20%, 10%, 0.2);
+      --ui-button-bg: 202, 76%, 79%;
+      --ui-button-color: 202, 76%, 75%;
+      --ui-button-bg-hover: hsl(202, 76%, 75%);
+      --left-sb-bg-color: hsl(213, 20%, 13%);
+      --left-sb-bg-color-hover: hsl(213, 20%, 16%);
+      --left-sb-txt-color: hsl(210, 10%, 51%);
+      --left-sb-txt-color-hover: hsl(210, 19%, 73%);
+      --inverted-text: #1c2026;
+      --code-lang: hsl(214, 21%, 16%);
+      --lang-border: hsl(214, 21%, 14%);
+      --external-link-color: hsl(7, 32%, 70%);
+      --external-link-color-hover: hsl(163, 36%, 65%);
+      --highlighter: hsl(26, 100%, 90%);
+      --bracket-highligther: hsl(215, 16%, 25%);
+      --highlighter-text: hsl(219, 15%, 15%);
+      --selection: hsl(216, 45%, 32%, 0.6);
+      --page-ref-bg-hover: 209, 87%, 73%;
+      --properties-border: 209, 17%, 88%;
+      --caret-color: hsl(171, 100%, 58%);
+      --pdf-asset-color: hsl(163, 36%, 65%);
+      --card-title-bg-color: hsl(213, 20%, 11%);
+      --codemirror-wrapper: #161b22;
+      --mobile-toolbar-border: hsl(213, 20%, 18%, 0.8);
+      --box-shadow-sm: rgba(0, 0, 0, 0.15) 0 1px 2px 0;
+      --box-shadow-lg: rgba(0, 0, 0, 0.15) 0 4px 6px 0;
+      --drop-shadow-sm: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.36));
+      --drop-shadow-lg: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.36));
 }
 
 .white-theme,
 html[data-theme="light"] {
-    --aqua: 209, 87%, 73%;
-    --red: #e75154;
-    --orange: #ffa542;
-    --green: #2a9d8f;
-    --blue: #5397d3;
-    --ls-primary-background-color: hsl(208, 33%, 99%);
-    --ls-secondary-background-color: hsl(208, 33%, 98%);
-    --ls-tertiary-background-color: hsl(208, 33%, 99%);
-    --ls-quaternary-background-color: hsl(208, 33%, 98%);
-    --ls-table-tr-even-background-color: var(--transparent);
-    --ls-table-tr-odd-background-color: hsl(208, 33%, 97%);
-    --ls-active-primary-color: hsl(210, 73%, 32%);
-    --ls-active-secondary-color: hsl(210, 73%, 35%);
-    --ls-block-properties-background-color: hsl(208, 33%, 97%);
-    --ls-page-properties-background-color: hsl(208, 33%, 97%);
-    --ls-search-background-color: var(--ls-primary-background-color);
-    --ls-border-color: hsl(209, 17%, 88%);
-    --ls-secondary-border-color: hsl(209, 17%, 86%);
-    --ls-guideline-color: var(--ls-border-color);
-    --ls-menu-hover-color: var(--ls-a-chosen-bg);
-    --ls-primary-text-color: hsl(213, 12%, 20%);
-    --ls-secondary-text-color: hsl(213, 12%, 16%);
-    --ls-title-text-color: var(--ls-primary-text-color);
-    --ls-link-text-color: hsl(210, 73%, 32%);
-    --ls-link-text-hover-color: hsl(210, 73%, 35%);
-    --ls-link-ref-text-color: var(--ls-link-text-color);
-    --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
-    /* --ls-tag-text-color: #3d5866;
+      --aqua: 209, 87%, 73%;
+      --red: #e75154;
+      --orange: #ffa542;
+      --green: #2a9d8f;
+      --blue: #5397d3;
+      --ls-primary-background-color: hsl(208, 33%, 99%);
+      --ls-secondary-background-color: hsl(208, 33%, 98%);
+      --ls-tertiary-background-color: hsl(208, 33%, 99%);
+      --ls-quaternary-background-color: hsl(208, 33%, 98%);
+      --ls-table-tr-even-background-color: var(--transparent);
+      --ls-table-tr-odd-background-color: hsl(208, 33%, 97%);
+      --ls-active-primary-color: hsl(210, 73%, 32%);
+      --ls-active-secondary-color: hsl(210, 73%, 35%);
+      --ls-block-properties-background-color: hsl(208, 33%, 97%);
+      --ls-page-properties-background-color: hsl(208, 33%, 97%);
+      --ls-search-background-color: var(--ls-primary-background-color);
+      --ls-border-color: hsl(209, 17%, 88%);
+      --ls-secondary-border-color: hsl(209, 17%, 86%);
+      --ls-guideline-color: var(--ls-border-color);
+      --ls-menu-hover-color: var(--ls-a-chosen-bg);
+      --ls-primary-text-color: hsl(213, 12%, 20%);
+      --ls-secondary-text-color: hsl(213, 12%, 16%);
+      --ls-title-text-color: var(--ls-primary-text-color);
+      --ls-link-text-color: hsl(210, 73%, 32%);
+      --ls-link-text-hover-color: hsl(210, 73%, 35%);
+      --ls-link-ref-text-color: var(--ls-link-text-color);
+      --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color);
+      /* --ls-tag-text-color: #3d5866;
 	  --ls-tag-text-hover-color: #2b4451; */
-    --ls-slide-background-color: hsl(0, 0%, 100%);
-    --ls-block-bullet-border-color: hsl(202, 22%, 90%);
-    --ls-block-bullet-color: hsl(200, 13%, 55%);
-    --ls-block-highlight-color: hsl(203, 98%, 84%);
-    --ls-page-checkbox-color: hsl(206, 41%, 57%);
-    --ls-page-checkbox-border-color: hsl(206, 41%, 57%);
-    --ls-page-inline-code-color: 198, 34%, 15%;
-    --ls-page-inline-code-bg-color: 208, 33%, 97%;
-    --ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.2);
-    --ls-scrollbar-background-color: rgba(0, 0, 0, 0.1);
-    --ls-scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.3);
-    --ls-head-text-color: var(--ls-primary-text-color);
-    --ls-icon-color: hsl(198, 13%, 68%);
-    --ls-search-icon-color: var(--ls-icon-color);
-    --ls-a-chosen-bg: hsl(208, 33%, 94%);
-    --color-level-1: hsl(208, 33%, 98%);
-    --color-level-2: hsl(208, 33%, 97%);
-    --color-level-3: hsl(208, 33%, 98%);
-    --color-level-4: hsl(208, 33%, 97%);
-    --color-level-5: hsl(208, 33%, 98%);
-    --color-level-6: hsl(208, 33%, 97%);
-    --cl-border-shade1: hsl(202, 22%, 89%, 0.5);
-    --cl-border-shade2: hsl(202, 22%, 88%, 0.5);
-    --cl-border-shade3: hsl(202, 22%, 87%, 0.5);
-    --cl-border-shade4: hsl(202, 22%, 86%, 0.5);
-    --cl-border-shade5: hsl(202, 22%, 85%, 0.5);
-    --cl-border-shade6: hsl(202, 22%, 84%, 0.5);
-    --ui-button-bg: 202, 76%, 79%;
-    --ui-button-color: 202, 76%, 45%;
-    --ui-button-bg-hover: hsl(202, 76%, 65%);
-    --left-sb-bg-color: hsl(213, 20%, 13%);
-    --left-sb-bg-color-hover: hsl(213, 20%, 16%);
-    --code-lang: hsl(204, 41%, 93%);
-    --lang-border: hsl(204, 19%, 95%);
-    --left-sb-txt-color: hsl(210, 10%, 51%);
-    --left-sb-txt-color-hover: hsl(210, 19%, 73%);
-    --external-link-color: hsl(14, 86%, 53%);
-    --external-link-color-hover: hsl(78, 50%, 48%);
-    --highlighter: hsl(41, 100%, 69%, 0.8);
-    --bracket-highligther: hsl(242, 1%, 83%);
-    --highlighter-text: hsl(202, 33%, 17%);
-    --selection: hsl(212, 99%, 85%, 0.8);
-    --page-ref-bg-hover: 209, 87%, 73%;
-    --properties-border: 209, 17%, 88%;
-    --caret-color: hsl(223, 76%, 0%);
-    --pdf-asset-color: hsl(14, 86%, 53%);
-    --card-title-bg-color: hsl(208, 33%, 96%);
-    --codemirror-wrapper: #f6f8fa;
-    --example-admon: hsl(225, 40%, 98%);
-    --mobile-toolbar-border: hsl(209, 17%, 88%, 0.8);
-    --box-shadow-sm: rgba(23, 42, 53, 0.1) 0 1px 2px 0;
-    --box-shadow-lg: rgba(23, 40, 49, 0.1) 0 4px 6px 0;
-    --drop-shadow-sm: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-    --drop-shadow-lg: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+      --ls-slide-background-color: hsl(0, 0%, 100%);
+      --ls-block-bullet-border-color: hsl(202, 22%, 90%);
+      --ls-block-bullet-color: hsl(200, 13%, 55%);
+      --ls-block-highlight-color: hsl(203, 98%, 84%);
+      --ls-page-checkbox-color: hsl(206, 41%, 57%);
+      --ls-page-checkbox-border-color: hsl(206, 41%, 57%);
+      --ls-page-inline-code-color: 198, 34%, 15%;
+      --ls-page-inline-code-bg-color: 208, 33%, 97%;
+      --ls-scrollbar-foreground-color: rgba(0, 0, 0, 0.2);
+      --ls-scrollbar-background-color: rgba(0, 0, 0, 0.1);
+      --ls-scrollbar-thumb-hover-color: rgba(0, 0, 0, 0.3);
+      --ls-head-text-color: var(--ls-primary-text-color);
+      --ls-icon-color: hsl(198, 13%, 68%);
+      --ls-search-icon-color: var(--ls-icon-color);
+      --ls-a-chosen-bg: hsl(208, 33%, 94%);
+      --color-level-1: hsl(208, 33%, 98%);
+      --color-level-2: hsl(208, 33%, 97%);
+      --color-level-3: hsl(208, 33%, 98%);
+      --color-level-4: hsl(208, 33%, 97%);
+      --color-level-5: hsl(208, 33%, 98%);
+      --color-level-6: hsl(208, 33%, 97%);
+      --cl-border-shade1: hsl(202, 22%, 89%, 0.5);
+      --cl-border-shade2: hsl(202, 22%, 88%, 0.5);
+      --cl-border-shade3: hsl(202, 22%, 87%, 0.5);
+      --cl-border-shade4: hsl(202, 22%, 86%, 0.5);
+      --cl-border-shade5: hsl(202, 22%, 85%, 0.5);
+      --cl-border-shade6: hsl(202, 22%, 84%, 0.5);
+      --ui-button-bg: 202, 76%, 79%;
+      --ui-button-color: 202, 76%, 45%;
+      --ui-button-bg-hover: hsl(202, 76%, 65%);
+      --left-sb-bg-color: hsl(213, 20%, 13%);
+      --left-sb-bg-color-hover: hsl(213, 20%, 16%);
+      --code-lang: hsl(204, 41%, 93%);
+      --lang-border: hsl(204, 19%, 95%);
+      --left-sb-txt-color: hsl(210, 10%, 51%);
+      --left-sb-txt-color-hover: hsl(210, 19%, 73%);
+      --external-link-color: hsl(14, 86%, 53%);
+      --external-link-color-hover: hsl(78, 50%, 48%);
+      --highlighter: hsl(41, 100%, 69%, 0.8);
+      --bracket-highligther: hsl(242, 1%, 83%);
+      --highlighter-text: hsl(202, 33%, 17%);
+      --selection: hsl(212, 99%, 85%, 0.8);
+      --page-ref-bg-hover: 209, 87%, 73%;
+      --properties-border: 209, 17%, 88%;
+      --caret-color: hsl(223, 76%, 0%);
+      --pdf-asset-color: hsl(14, 86%, 53%);
+      --card-title-bg-color: hsl(208, 33%, 96%);
+      --codemirror-wrapper: #f6f8fa;
+      --example-admon: hsl(225, 40%, 98%);
+      --mobile-toolbar-border: hsl(209, 17%, 88%, 0.8);
+      --box-shadow-sm: rgba(23, 42, 53, 0.1) 0 1px 2px 0;
+      --box-shadow-lg: rgba(23, 40, 49, 0.1) 0 4px 6px 0;
+      --drop-shadow-sm: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+      --drop-shadow-lg: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 *,
 *:before,
 *:after {
-    font-variation-settings: "MONO" var(--MONO), "CASL" var(--CASL),
-        "slnt" var(--slnt), "CRSV" var(--CRSV);
+      font-variation-settings: "MONO"var(--MONO), "CASL"var(--CASL),
+            "slnt"var(--slnt), "CRSV"var(--CRSV);
 }
 
 html:not(.is-native-android) {
-    -webkit-font-smoothing: auto;
-    scroll-behavior: smooth;
+      -webkit-font-smoothing: auto;
+      scroll-behavior: smooth;
 }
 
 p {
-    --MONO: 0;
+      --MONO: 0;
 }
 
 i,
 em {
-    --slnt: -15;
+      --slnt: -15;
 }
 
 strong,
 b {
-    font-weight: bold;
+      font-weight: bold;
 }
 
 /* START Color Levels */
 
 .color-level .color-level {
-    border-top: 1px solid var(--cl-border-shade1);
+      border-top: 1px solid var(--cl-border-shade1);
 }
 
 .color-level .color-level .color-level {
-    border-top: 2px solid var(--cl-border-shade2);
+      border-top: 2px solid var(--cl-border-shade2);
 }
 
 .color-level .color-level .color-level .color-level {
-    border-top: 3px solid var(--cl-border-shade3);
+      border-top: 3px solid var(--cl-border-shade3);
 }
 
 .color-level .color-level .color-level .color-level .color-level {
-    border-top: 4px solid var(--cl-border-shade4);
+      border-top: 4px solid var(--cl-border-shade4);
 }
 
 /* Color Levels  END */
@@ -275,85 +275,85 @@ b {
 
 .journal-title .title::before,
 .is-journals .title::before {
-    content: "📅";
-    font-size: 0.75em;
-    margin-right: 10px;
-    vertical-align: text-bottom;
+      content: "📅";
+      font-size: 0.75em;
+      margin-right: 10px;
+      vertical-align: text-bottom;
 }
 
 /* Journal Header END */
 
 /* START TASKS */
 .form-checkbox {
-    background-color: var(--transparent);
-    border: 1px solid;
-    border-color: var(--ls-page-checkbox-border-color, hsl(188, 45%, 78%, 0.8));
-    box-shadow: inset var(--box-shadow-sm);
-    color: var(--ls-page-checkbox-color, hsl(188, 45%, 68%, 0.8));
-    opacity: var(--opacity-sm);
+      background-color: var(--transparent);
+      border: 1px solid;
+      border-color: var(--ls-page-checkbox-border-color, hsl(188, 45%, 78%, 0.8));
+      box-shadow: inset var(--box-shadow-sm);
+      color: var(--ls-page-checkbox-color, hsl(188, 45%, 68%, 0.8));
+      opacity: var(--opacity-sm);
 }
 
 .form-checkbox {
-    border-radius: var(--radius-sm);
+      border-radius: var(--radius-sm);
 }
 
 .form-checkbox:checked {
-    border: none;
+      border: none;
 }
 
 .block-marker {
-    font-size: 1em;
+      font-size: 1em;
 }
 
 .priority {
-    font-size: 0;
-    visibility: hidden;
+      font-size: 0;
+      visibility: hidden;
 }
 
 a[priority]::before,
 .priority::before {
-    background-repeat: no-repeat;
-    border: 1px solid var(--transparent);
-    border-radius: 100%;
-    display: inline-block;
-    font-size: 12px;
-    /*Don't use scaled sizing use absolute font size */
-    height: 16px;
-    visibility: visible;
-    width: 16px;
+      background-repeat: no-repeat;
+      border: 1px solid var(--transparent);
+      border-radius: 100%;
+      display: inline-block;
+      font-size: 12px;
+      /*Don't use scaled sizing use absolute font size */
+      height: 16px;
+      visibility: visible;
+      width: 16px;
 }
 
 a[priority]::before {
-    /* display: inline-flex ; */
-    margin-right: 5px;
-    /* margin-top: 5px; */
+      /* display: inline-flex ; */
+      margin-right: 5px;
+      /* margin-top: 5px; */
 }
 
 a.tooltip-priority {
-    transition: none;
+      transition: none;
 }
 
 a[priority="A"]::before,
 .priority[href="#/page/A"]::before {
-    background-color: var(--red);
-    content: " ";
+      background-color: var(--red);
+      content: " ";
 }
 
 a[priority="B"]::before,
 .priority[href="#/page/B"]::before {
-    background-color: var(--orange);
-    content: " ";
+      background-color: var(--orange);
+      content: " ";
 }
 
 a[priority="C"]::before,
 .priority[href="#/page/C"]::before {
-    background-color: var(--green);
-    content: " ";
+      background-color: var(--green);
+      content: " ";
 }
 
 .timestamp,
 [data-drawer-name="logbook"] {
-    font-style: italic;
+      font-style: italic;
 }
 
 /* TASKS END*/
@@ -361,18 +361,18 @@ a[priority="C"]::before,
 /* START Links */
 
 .external-link {
-    border-bottom: 1px solid var(--external-link-color);
-    border-radius: var(--radius-sm);
-    color: var(--external-link-color);
+      border-bottom: 1px solid var(--external-link-color);
+      border-radius: var(--radius-sm);
+      color: var(--external-link-color);
 }
 
 .external-link:hover {
-    border-bottom: 1px solid var(--external-link-color-hover);
-    color: var(--external-link-color-hover);
+      border-bottom: 1px solid var(--external-link-color-hover);
+      color: var(--external-link-color-hover);
 }
 
 .youtube-timestamp {
-    color: var(--ls-link-ref-text-color);
+      color: var(--ls-link-ref-text-color);
 }
 
 /* Links END */
@@ -388,14 +388,14 @@ a[priority="C"]::before,
 } */
 
 html[data-theme="light"] .block-children-left-border:hover {
-    background-color: hsl(var(--aqua), 1);
-    transition: var(--transition);
-    /* opacity: var(--opacity-md); */
+      background-color: hsl(var(--aqua), 1);
+      transition: var(--transition);
+      /* opacity: var(--opacity-md); */
 }
 
 html[data-theme="dark"] .block-children-left-border:hover {
-    background-color: hsl(var(--aqua), 0.6);
-    transition: var(--transition);
+      background-color: hsl(var(--aqua), 0.6);
+      transition: var(--transition);
 }
 
 /* Bullet & Bullet Container END */
@@ -403,94 +403,94 @@ html[data-theme="dark"] .block-children-left-border:hover {
 /* Inline Header Tags Adjustments */
 
 .ls-block :is(h1, h2) {
-    border: none;
-    margin: 0;
+      border: none;
+      margin: 0;
 }
 
 .ls-block :is(h1, h2, h3, h4, h5, h6)::after {
-    background-size: 16px 16px;
-    content: "";
-    display: inline-flex;
-    height: 16px;
-    margin-left: 5px;
-    opacity: 0;
-    vertical-align: middle;
-    width: 16px;
+      background-size: 16px 16px;
+      content: "";
+      display: inline-flex;
+      height: 16px;
+      margin-left: 5px;
+      opacity: 0;
+      vertical-align: middle;
+      width: 16px;
 }
 
 .ls-block :is(h1, h2, h3, h4, h5, h6):hover::after {
-    opacity: var(--opacity-sm);
-    transition: all 0.5s ease-in-out;
+      opacity: var(--opacity-sm);
+      transition: all 0.5s ease-in-out;
 }
 
 html[data-theme="dark"] .ls-block h1::after {
-    background-image: url("./assets/h1-light.svg");
+      background-image: url("./assets/h1-light.svg");
 }
 
 html[data-theme="dark"] .ls-block h2::after {
-    background-image: url("./assets/h2-light.svg");
+      background-image: url("./assets/h2-light.svg");
 }
 
 html[data-theme="dark"] .ls-block h3::after {
-    background-image: url("./assets/h3-light.svg");
+      background-image: url("./assets/h3-light.svg");
 }
 
 html[data-theme="dark"] .ls-block h4::after {
-    background-image: url("./assets/h4-light.svg");
+      background-image: url("./assets/h4-light.svg");
 }
 
 html[data-theme="dark"] .ls-block h5::after {
-    background-image: url("./assets/h5-light.svg");
+      background-image: url("./assets/h5-light.svg");
 }
 
 html[data-theme="dark"] .ls-block h6::after {
-    background-image: url("./assets/h6-light.svg");
+      background-image: url("./assets/h6-light.svg");
 }
 
 html[data-theme="light"] .ls-block h1::after {
-    background-image: url("./assets/h1.svg");
+      background-image: url("./assets/h1.svg");
 }
 
 html[data-theme="light"] .ls-block h2::after {
-    background-image: url("./assets/h2.svg");
+      background-image: url("./assets/h2.svg");
 }
 
 html[data-theme="light"] .ls-block h3::after {
-    background-image: url("./assets/h3.svg");
+      background-image: url("./assets/h3.svg");
 }
 
 html[data-theme="light"] .ls-block h4::after {
-    background-image: url("./assets/h4.svg");
+      background-image: url("./assets/h4.svg");
 }
 
 html[data-theme="light"] .ls-block h5::after {
-    background-image: url("./assets/h5.svg");
+      background-image: url("./assets/h5.svg");
 }
 
 html[data-theme="light"] .ls-block h6::after {
-    background-image: url("./assets/h6.svg");
+      background-image: url("./assets/h6.svg");
 }
 
 .editor-inner .h1.uniline-block,
 .ls-block h1 {
-    font-size: 2em;
-    min-height: 1.5em;
+      font-size: 2em;
+      min-height: 1.5em;
 }
 
 .editor-inner .h2.uniline-block,
 .ls-block h2 {
-    font-size: 1.5em;
-    min-height: 1.5em;
-    position: relative;
-    top: -3px;
+      font-size: 1.5em;
+      min-height: 1.5em;
+      position: relative;
+      top: -3px;
 }
 
 .editor-inner .h3.uniline-block,
 .ls-block h3 {
-    font-size: 1.3em;
-    min-height: 1.5em;
-    position: relative;
-    top: -4px;
+      font-size: 1.3em;
+      min-height: 1.5em;
+      position: relative;
+      top: -4px;
 }
 
 .editor-inner .h4.uniline-block,
@@ -499,76 +499,76 @@ html[data-theme="light"] .ls-block h6::after {
 .ls-block h5,
 .editor-inner .h6.uniline-block,
 .ls-block h6 {
-    font-size: 1em;
-    min-height: 1.5em;
-    position: relative;
-    top: -5px;
+      font-size: 1em;
+      min-height: 1.5em;
+      position: relative;
+      top: -5px;
 }
 
 .editor-inner .multiline-block:is(.h1, .h2, .h3, .h4, .h5, .h6)::first-line,
 .editor-inner .uniline-block:is(.h1, .h2, .h3, .h4, .h5, .h6),
 .ls-block :is(h1, h2, h3, h4, h5, h6) {
-    font-weight: 700;
+      font-weight: 700;
 }
 
 .editor-inner .uniline-block:is(.h1, .h2),
 .ls-block :is(h1, h2) {
-    border-bottom: 1px solid var(--ls-quaternary-background-color);
-    margin: 0.4em 0 0;
+      border-bottom: 1px solid var(--ls-quaternary-background-color);
+      margin: 0.4em 0 0;
 }
 
 .block-ref .editor-inner :is(.h1, .h2),
 .block-ref .ls-block :is(h1, h2) {
-    border-bottom: none;
+      border-bottom: none;
 }
 
 .block-ref :is(h1, h2, h3, h4, h5, h6) {
-    border-bottom: none;
-    /* font-size: 1rem; */
-    /* Useless not sure why it was initially added*/
+      border-bottom: none;
+      /* font-size: 1rem; */
+      /* Useless not sure why it was initially added*/
 }
 
 .editor-inner .uniline-block:is(.h1, .h2),
 .ls-block :is(h1, h2) {
-    border-bottom: var(--transparent);
+      border-bottom: var(--transparent);
 }
 
 .doc-mode .block-children {
-    border-left: none !important;
+      border-left: none !important;
 }
 
 .document-mode .editor-inner .h1,
 .document-mode .ls-block h1 {
-    margin: 0.34em 0;
+      margin: 0.34em 0;
 }
 
 .document-mode .editor-inner .h2,
 .document-mode .ls-block h2 {
-    margin: 0.3em 0;
+      margin: 0.3em 0;
 }
 
 .document-mode .editor-inner .h3,
 .document-mode .ls-block h3 {
-    margin: 0.28em 0;
+      margin: 0.28em 0;
 }
 
 .document-mode .editor-inner .h4,
 .document-mode .ls-block h4 {
-    margin: 0.26em 0;
+      margin: 0.26em 0;
 }
 
 .document-mode .editor-inner .h5,
 .document-mode .ls-block h5 {
-    margin: 0.24em 0;
+      margin: 0.24em 0;
 }
 
 .document-mode .editor-inner .h6,
 .document-mode .ls-block h6 {
-    margin: 0.22em 0;
+      margin: 0.22em 0;
 }
 
 .document-mode .ls-block {
-    margin-bottom: 0rem;
+      margin-bottom: 0rem;
 }
 
 /* Header Tag Adjustments END */
@@ -576,105 +576,105 @@ html[data-theme="light"] .ls-block h6::after {
 /* START #tag  */
 
 :root {
-    --tag-text-color: 217, 17%, 15%;
-    --tag-general-color: 188, 45%, 68%;
-    --tag-new: 209, 87%, 73%;
-    --tag-done: 338, 80%, 80%;
-    --tag-canceled: 214, 29%, 58%;
-    --tag-doing: 173, 60%, 62%;
-    --tag-wait: 26, 100%, 85%;
-    --tag-general-light: 201, 93%, 76%;
+      --tag-text-color: 217, 17%, 15%;
+      --tag-general-color: 188, 45%, 68%;
+      --tag-new: 209, 87%, 73%;
+      --tag-done: 338, 80%, 80%;
+      --tag-canceled: 214, 29%, 58%;
+      --tag-doing: 173, 60%, 62%;
+      --tag-wait: 26, 100%, 85%;
+      --tag-general-light: 201, 93%, 76%;
 }
 
 .content a.tag {
-    border: 1px solid transparent;
-    border-radius: var(--radius-sm);
-    color: hsl(var(--tag-text-color));
-    display: inline;
-    font-size: 1em;
-    padding: 0 5px;
-    /* opacity: .8; */
+      border: 1px solid transparent;
+      border-radius: var(--radius-sm);
+      color: hsl(var(--tag-text-color));
+      display: inline;
+      font-size: 1em;
+      padding: 0 5px;
+      /* opacity: .8; */
 }
 
 html[data-theme="dark"] .content a.tag {
-    background-color: hsl(var(--tag-general-color), 0.05);
-    border: 1px solid hsl(var(--tag-general-color), 0.08);
-    color: hsl(var(--tag-general-color), 0.8);
+      background-color: hsl(var(--tag-general-color), 0.05);
+      border: 1px solid hsl(var(--tag-general-color), 0.08);
+      color: hsl(var(--tag-general-color), 0.8);
 }
 
 html[data-theme="dark"] .content a.tag:hover {
-    opacity: var(--opacity-none);
+      opacity: var(--opacity-none);
 }
 
 html[data-theme="light"] .content a.tag {
-    background-color: hsl(var(--tag-general-color), 0.2);
-    border: 1px solid hsl(var(--tag-general-color), 0.4);
+      background-color: hsl(var(--tag-general-color), 0.2);
+      border: 1px solid hsl(var(--tag-general-color), 0.4);
 }
 
 /* START Custom Tags */
 html[data-theme="dark"] .content a.tag[data-ref="new"] {
-    background-color: hsl(var(--tag-new), 0.05);
-    border: 1px solid hsl(var(--tag-new), 0.08);
-    color: hsl(var(--tag-new), 0.8);
+      background-color: hsl(var(--tag-new), 0.05);
+      border: 1px solid hsl(var(--tag-new), 0.08);
+      color: hsl(var(--tag-new), 0.8);
 }
 
 html[data-theme="dark"] .content a.tag[data-ref="doing"] {
-    background-color: hsl(var(--tag-doing), 0.05);
-    border: 1px solid hsl(var(--tag-doing), 0.08);
-    color: hsl(var(--tag-doing), 0.8);
+      background-color: hsl(var(--tag-doing), 0.05);
+      border: 1px solid hsl(var(--tag-doing), 0.08);
+      color: hsl(var(--tag-doing), 0.8);
 }
 
 html[data-theme="dark"] .content a.tag[data-ref="wait"],
 html[data-theme="dark"] .content a.tag[data-ref="waiting"] {
-    background-color: hsl(var(--tag-wait), 0.05);
-    border: 1px solid hsl(var(--tag-wait), 0.08);
-    color: hsl(var(--tag-wait), 0.8);
+      background-color: hsl(var(--tag-wait), 0.05);
+      border: 1px solid hsl(var(--tag-wait), 0.08);
+      color: hsl(var(--tag-wait), 0.8);
 }
 
 html[data-theme="dark"] .content a.tag[data-ref="done"] {
-    background-color: hsl(var(--tag-done), 0.05);
-    border: 1px solid hsl(var(--tag-done), 0.08);
-    color: hsl(var(--tag-done), 0.8);
+      background-color: hsl(var(--tag-done), 0.05);
+      border: 1px solid hsl(var(--tag-done), 0.08);
+      color: hsl(var(--tag-done), 0.8);
 }
 
 html[data-theme="dark"] .content a.tag[data-ref="canceled"],
 html[data-theme="dark"] .content a.tag[data-ref="cancelled"] {
-    background-color: hsl(var(--tag-canceled), 0.05);
-    border: 1px solid hsl(var(--tag-canceled), 0.08);
-    color: hsl(var(--tag-canceled), 0.8);
-    text-decoration: line-through;
+      background-color: hsl(var(--tag-canceled), 0.05);
+      border: 1px solid hsl(var(--tag-canceled), 0.08);
+      color: hsl(var(--tag-canceled), 0.8);
+      text-decoration: line-through;
 }
 
 html[data-theme="light"] .content a.tag[data-ref="new"] {
-    background-color: hsl(var(--tag-new), 0.2);
-    border: 1px solid hsl(var(--tag-new), 0.4);
+      background-color: hsl(var(--tag-new), 0.2);
+      border: 1px solid hsl(var(--tag-new), 0.4);
 }
 
 html[data-theme="light"] .content a.tag[data-ref="doing"] {
-    background-color: hsl(var(--tag-doing), 0.2) !important;
-    border: 1px solid hsl(var(--tag-doing), 0.4);
+      background-color: hsl(var(--tag-doing), 0.2) !important;
+      border: 1px solid hsl(var(--tag-doing), 0.4);
 }
 
 html[data-theme="light"] .content a.tag[data-ref="wait"],
 html[data-theme="light"] .content a.tag[data-ref="waiting"] {
-    background-color: hsl(var(--tag-wait), 0.2);
-    border: 1px solid hsl(var(--tag-wait), 0.4);
+      background-color: hsl(var(--tag-wait), 0.2);
+      border: 1px solid hsl(var(--tag-wait), 0.4);
 }
 
 html[data-theme="light"] .content a.tag[data-ref="done"] {
-    background-color: hsl(var(--tag-done), 0.2);
-    border: 1px solid hsl(var(--tag-done), 0.4);
+      background-color: hsl(var(--tag-done), 0.2);
+      border: 1px solid hsl(var(--tag-done), 0.4);
 }
 
 html[data-theme="light"] .content a.tag[data-ref="canceled"],
 html[data-theme="light"] .content a.tag[data-ref="cancelled"] {
-    background-color: hsl(var(--tag-canceled), 0.2);
-    border: 1px solid hsl(var(--tag-canceled), 0.4);
-    text-decoration: line-through;
+      background-color: hsl(var(--tag-canceled), 0.2);
+      border: 1px solid hsl(var(--tag-canceled), 0.4);
+      text-decoration: line-through;
 }
 
 .content a.tag:hover {
-    opacity: var(--opacity-md);
+      opacity: var(--opacity-md);
 }
 
 /* Custom Tags END */
@@ -683,19 +683,19 @@ html[data-theme="light"] .content a.tag[data-ref="cancelled"] {
 /* START Sidebar */
 
 html[data-theme="light"] .cp__header>.l a {
-    color: var(--left-sb-txt-color);
+      color: var(--left-sb-txt-color);
 }
 
 .left-sidebar-inner,
 .cp__sidebar-left-layout::before {
-    background-color: var(--left-sb-bg-color);
-    /* border-right: 1px solid var(--ls-border-color) ; */
+      background-color: var(--left-sb-bg-color);
+      /* border-right: 1px solid var(--ls-border-color) ; */
 }
 
 #left-sidebar a,
 .left-sidebar-inner .favorites .page-icon,
 .left-sidebar-inner .recent .page-icon {
-    color: var(--left-sb-txt-color) !important;
+      color: var(--left-sb-txt-color) !important;
 }
 
 .left-sidebar-inner a.item.active,
@@ -703,72 +703,72 @@ html[data-theme="light"] .cp__header>.l a {
 .left-sidebar-inner .nav-content-item>.header:hover,
 .left-sidebar-inner .nav-content-item .header:hover,
 #left-sidebar a:hover {
-    background-color: var(--left-sb-bg-color-hover);
-    color: var(--left-sb-txt-color-hover) !important;
+      background-color: var(--left-sb-bg-color-hover);
+      color: var(--left-sb-txt-color-hover) !important;
 }
 
 .dropdown-wrapper {
-    --left-sb-dropdown-bd: 213, 15%, 25%;
+      --left-sb-dropdown-bd: 213, 15%, 25%;
 }
 
 .dropdown-wrapper hr {
-    border-color: hsl(var(--left-sb-dropdown-bd), 0.2);
+      border-color: hsl(var(--left-sb-dropdown-bd), 0.2);
 }
 
 nav:nth-child(1)>div.relative>div>div>div {
-    color: var(--left-sb-txt-color);
+      color: var(--left-sb-txt-color);
 }
 
 nav:nth-child(1)>div.relative>div,
 nav:nth-child(1)>div.relative>div>div>a {
-    background-color: var(--left-sb-bg-color);
+      background-color: var(--left-sb-bg-color);
 }
 
 .dark-theme #head>div.r.flex>div>div>div,
 nav:nth-child(1)>div.relative>div {
-    border: 1px solid hsl(var(--left-sb-dropdown-bd), 0.2);
+      border: 1px solid hsl(var(--left-sb-dropdown-bd), 0.2);
 }
 
 #left-sidebar a,
 .left-sidebar-inner .favorites .page-icon,
 .left-sidebar-inner .recent .page-icon,
 nav:nth-child(1)>div.relative>div>div>div {
-    color: var(--left-sb-txt-color);
+      color: var(--left-sb-txt-color);
 }
 
 .left-sidebar-inner .nav-content-item>.header:hover,
 #left-sidebar a:hover {
-    background-color: var(--left-sb-bg-color-hover);
-    color: var(--left-sb-txt-color-hover);
+      background-color: var(--left-sb-bg-color-hover);
+      color: var(--left-sb-txt-color-hover);
 }
 
-.cp__header .button.icon {
-    color: var(--left-sb-txt-color);
+.cp__header>.l .button.icon {
+      color: var(--left-sb-txt-color);
 }
 
 .cp__header>.l .button.icon:hover {
-    background-color: var(--transparent);
-    cursor: pointer;
+      background-color: var(--transparent);
+      cursor: pointer;
 }
 
 html[data-theme="light"] .cp__right-sidebar .sidebar-item,
 html[data-theme="light"] .cp__right-sidebar {
-    background-color: var(--ls-secondary-background-color);
+      background-color: var(--ls-secondary-background-color);
 }
 
 html[data-theme="dark"] .cp__right-sidebar .sidebar-item,
 html[data-theme="dark"] .cp__right-sidebar {
-    background-color: var(--ls-secondary-background-color);
+      background-color: var(--ls-secondary-background-color);
 }
 
 .left-sidebar-inner .new-page-link {
-    background-color: var(--left-sb-bg-color-hover);
+      background-color: var(--left-sb-bg-color-hover);
 }
 
 @media (min-width: 640px) {
-    .left-sidebar-inner .new-page-link {
-        background-color: var(--left-sb-bg-color-hover);
-    }
+      .left-sidebar-inner .new-page-link {
+            background-color: var(--left-sb-bg-color-hover);
+      }
 }
 
 /* Sidebar END */
@@ -778,261 +778,261 @@ html[data-theme="dark"] .cp__right-sidebar {
 .cp__all_pages_table td.backlinks>span,
 .cp__all_pages_table td.created-at>span,
 .cp__all_pages_table td.updated-at>span {
-    color: var(--ls-primary-text-color) !important;
+      color: var(--ls-primary-text-color) !important;
 }
 
 .table-wrapper>table td,
 .table-wrapper>table th {
-    border: solid 1px var(--ls-border-color);
+      border: solid 1px var(--ls-border-color);
 }
 
 th {
-    font-size: 1em;
-    font-weight: bold;
+      font-size: 1em;
+      font-weight: bold;
 }
 
 th,
 td {
-    padding: 0.6rem;
+      padding: 0.6rem;
 }
 
 table>tbody>tr:nth-of-type(odd)>* {
-    background: var(--ls-table-tr-odd-background-color);
+      background: var(--ls-table-tr-odd-background-color);
 }
 
 /* Table END */
 /* START Admonition & Blockquote */
 :root {
-    --bq: 168, 69%;
-    --verse: 185, 100%;
-    --warn: 46, 74%;
-    --important: 338, 80%;
-    --tip: 209, 87%;
-    --note: 210, 9%;
-    --caution: 376, 100%;
-    --pinned: 224, 88%;
-    --example: 213, 20%;
+      --bq: 168, 69%;
+      --verse: 185, 100%;
+      --warn: 46, 74%;
+      --important: 338, 80%;
+      --tip: 209, 87%;
+      --note: 210, 9%;
+      --caution: 376, 100%;
+      --pinned: 224, 88%;
+      --example: 213, 20%;
 }
 
 .admonitionblock,
 .verse,
 blockquote,
 pre.pre-wrap-white-space {
-    border: 1px solid var(--transparent);
-    border-radius: var(--radius-md);
-    padding: 2em 2em;
-    margin: 1em 0;
+      border: 1px solid var(--transparent);
+      border-radius: var(--radius-md);
+      padding: 2em 2em;
+      margin: 1em 0;
 }
 
 .verse .is-paragraph {
-    font-size: 0.995622em;
+      font-size: 0.995622em;
 }
 
 blockquote .is-paragraph {
-    font-size: 0.995622em;
+      font-size: 0.995622em;
 }
 
 .admonitionblock .is-paragraph {
-    font-size: 0.885em;
+      font-size: 0.885em;
 }
 
 blockquote .is-paragraph:first-child {
-    display: inline;
+      display: inline;
 }
 
 blockquote::before {
-    font-size: 3.5em;
-    font-weight: normal;
-    line-height: 0.1em;
-    margin-right: 1px;
-    vertical-align: -0.3em;
-    content: "❝";
+      font-size: 3.5em;
+      font-weight: normal;
+      line-height: 0.1em;
+      margin-right: 1px;
+      vertical-align: -0.3em;
+      content: "❝";
 }
 
 html[data-theme="light"] blockquote {
-    background-color: hsl(var(--bq), 74%, 0.15);
-    border-color: hsl(var(--bq), 74%, 0.15);
+      background-color: hsl(var(--bq), 74%, 0.15);
+      border-color: hsl(var(--bq), 74%, 0.15);
 }
 
 html[data-theme="dark"] blockquote {
-    background-color: hsl(var(--bq), 74%, 0.05);
-    border-color: hsl(var(--bq), 74%, 0.05);
-    color: hsl(var(--bq), 74%, 0.5);
+      background-color: hsl(var(--bq), 74%, 0.05);
+      border-color: hsl(var(--bq), 74%, 0.05);
+      color: hsl(var(--bq), 74%, 0.5);
 }
 
 html[data-theme="dark"] blockquote::before {
-    color: hsl(var(--bq), 74%, 0.5);
+      color: hsl(var(--bq), 74%, 0.5);
 }
 
 html[data-theme="light"] blockquote::before {
-    color: hsl(var(--bq), 74%, 0.8);
+      color: hsl(var(--bq), 74%, 0.8);
 }
 
 html[data-theme="dark"] .important,
 html[data-theme="dark"] .admonitionblock.important {
-    background-color: hsl(var(--important), 80%, 0.05);
-    border-color: hsl(var(--important), 80%, 0.05);
-    color: hsl(var(--important), 74%, 0.5);
+      background-color: hsl(var(--important), 80%, 0.05);
+      border-color: hsl(var(--important), 80%, 0.05);
+      color: hsl(var(--important), 74%, 0.5);
 }
 
 html[data-theme="light"] .important,
 html[data-theme="light"] .admonitionblock.important {
-    background-color: hsl(var(--important), 80%, 0.1);
-    border-color: hsl(var(--important), 80%, 0.06);
+      background-color: hsl(var(--important), 80%, 0.1);
+      border-color: hsl(var(--important), 80%, 0.06);
 }
 
 html[data-theme="dark"] .verse {
-    background-color: hsl(var(--verse), 70%, 0.05);
-    border-color: hsl(var(--verse), 70%, 0.05);
-    color: hsl(var(--verse), 70%, 0.5);
-    font-style: italic;
+      background-color: hsl(var(--verse), 70%, 0.05);
+      border-color: hsl(var(--verse), 70%, 0.05);
+      color: hsl(var(--verse), 70%, 0.5);
+      font-style: italic;
 }
 
 html[data-theme="light"] .verse {
-    background-color: hsl(var(--verse), 60%, 0.1);
-    border-color: hsl(var(--verse), 60%, 0.1);
-    font-style: italic;
+      background-color: hsl(var(--verse), 60%, 0.1);
+      border-color: hsl(var(--verse), 60%, 0.1);
+      font-style: italic;
 }
 
 html[data-theme="dark"] .warning,
 html[data-theme="dark"] .admonitionblock.warning,
 html[data-theme="dark"] #settings>div>article>div>div.flex.flex-row.admonitionblock.align-items.warning {
-    background-color: hsl(var(--warn), 82%, 0.05);
-    border-color: hsl(var(--warn), 82%, 0.05);
-    color: hsl(var(--warn), 82%, 0.5);
+      background-color: hsl(var(--warn), 82%, 0.05);
+      border-color: hsl(var(--warn), 82%, 0.05);
+      color: hsl(var(--warn), 82%, 0.5);
 }
 
 html[data-theme="light"] .warning,
 html[data-theme="light"] .admonitionblock.warning,
 html[data-theme="light"] #settings>div>article>div>div.flex.flex-row.admonitionblock.align-items.warning {
-    background-color: hsl(var(--warn), 82%, 0.15);
-    border-color: hsl(var(--warn), 82%, 0.1);
+      background-color: hsl(var(--warn), 82%, 0.15);
+      border-color: hsl(var(--warn), 82%, 0.1);
 }
 
 html[data-theme="dark"] .caution,
 html[data-theme="dark"] .admonitionblock.caution {
-    background-color: hsl(var(--caution), 84%, 0.05);
-    border-color: hsl(var(--caution), 84%, 0.05);
-    color: hsl(var(--caution), 84%, 0.5);
+      background-color: hsl(var(--caution), 84%, 0.05);
+      border-color: hsl(var(--caution), 84%, 0.05);
+      color: hsl(var(--caution), 84%, 0.5);
 }
 
 html[data-theme="light"] .caution,
 html[data-theme="light"] .admonitionblock.caution {
-    background-color: hsl(var(--caution), 84%, 0.1);
-    border-color: hsl(var(--caution), 84%, 0.1);
+      background-color: hsl(var(--caution), 84%, 0.1);
+      border-color: hsl(var(--caution), 84%, 0.1);
 }
 
 html[data-theme="dark"] .pinned,
 html[data-theme="dark"] .admonitionblock.pinned {
-    background-color: hsl(var(--pinned), 80%, 0.05);
-    border-color: hsl(var(--pinned), 80%, 0.05);
-    color: hsl(var(--pinned), 80%, 0.5);
+      background-color: hsl(var(--pinned), 80%, 0.05);
+      border-color: hsl(var(--pinned), 80%, 0.05);
+      color: hsl(var(--pinned), 80%, 0.5);
 }
 
 html[data-theme="light"] .pinned,
 html[data-theme="light"] .admonitionblock.pinned {
-    background-color: hsl(var(--pinned), 80%, 0.1);
-    border-color: hsl(var(--pinned), 80%, 0.1);
+      background-color: hsl(var(--pinned), 80%, 0.1);
+      border-color: hsl(var(--pinned), 80%, 0.1);
 }
 
 html[data-theme="dark"] .admonitionblock.tip {
-    background-color: hsl(var(--tip), 73%, 0.05);
-    border-color: hsl(var(--tip), 73%, 0.05);
-    color: hsl(var(--tip), 73%, 0.5);
+      background-color: hsl(var(--tip), 73%, 0.05);
+      border-color: hsl(var(--tip), 73%, 0.05);
+      color: hsl(var(--tip), 73%, 0.5);
 }
 
 html[data-theme="light"] .admonitionblock.tip {
-    background-color: hsl(var(--tip), 73%, 0.1);
-    border-color: hsl(var(--tip), 73%, 0.08);
+      background-color: hsl(var(--tip), 73%, 0.1);
+      border-color: hsl(var(--tip), 73%, 0.08);
 }
 
 html[data-theme="dark"] .note,
 html[data-theme="dark"] .admonitionblock.note {
-    background-color: hsl(var(--note), 86%, 0.05);
-    border-color: hsl(var(--note), 86%, 0.05);
-    color: hsl(var(--note), 86%, 0.5);
+      background-color: hsl(var(--note), 86%, 0.05);
+      border-color: hsl(var(--note), 86%, 0.05);
+      color: hsl(var(--note), 86%, 0.5);
 }
 
 html[data-theme="light"] .note,
 html[data-theme="light"] .admonitionblock.note {
-    background-color: hsl(var(--note), 86%, 0.2);
-    border-color: hsl(var(--note), 86%, 0.1);
+      background-color: hsl(var(--note), 86%, 0.2);
+      border-color: hsl(var(--note), 86%, 0.1);
 }
 
 html[data-theme="dark"] pre.pre-wrap-white-space {
-    background-color: hsl(var(--example), 10%, 0.4);
-    border-color: hsl(var(--example), 10%, 0.1);
+      background-color: hsl(var(--example), 10%, 0.4);
+      border-color: hsl(var(--example), 10%, 0.1);
 }
 
 html[data-theme="light"] pre.pre-wrap-white-space {
-    background-color: hsl(var(--example), 10%, 0.03);
-    border-color: hsl(var(--example), 10%, 0);
+      background-color: hsl(var(--example), 10%, 0.03);
+      border-color: hsl(var(--example), 10%, 0);
 }
 
 html[data-theme="light"] .warning svg {
-    color: hsl(var(--warn), 82%);
+      color: hsl(var(--warn), 82%);
 }
 
 html[data-theme="light"] .important svg {
-    color: hsl(var(--important), 80%);
+      color: hsl(var(--important), 80%);
 }
 
 html[data-theme="light"] .tip svg {
-    color: hsl(var(--tip), 73%);
+      color: hsl(var(--tip), 73%);
 }
 
 html[data-theme="light"] .note svg {
-    color: hsl(var(--note), 86%);
+      color: hsl(var(--note), 86%);
 }
 
 html[data-theme="light"] .caution svg {
-    color: hsl(var(--caution), 84%);
+      color: hsl(var(--caution), 84%);
 }
 
 html[data-theme="light"] .pinned svg {
-    color: hsl(var(--pinned), 80%);
+      color: hsl(var(--pinned), 80%);
 }
 
 html[data-theme="dark"] .warning svg {
-    color: hsl(var(--warn), 82%, 0.6);
+      color: hsl(var(--warn), 82%, 0.6);
 }
 
 html[data-theme="dark"] .important svg {
-    color: hsl(var(--important), 80%, 0.6);
+      color: hsl(var(--important), 80%, 0.6);
 }
 
 html[data-theme="dark"] .tip svg {
-    color: hsl(var(--tip), 73%, 0.6);
+      color: hsl(var(--tip), 73%, 0.6);
 }
 
 html[data-theme="dark"] .note svg {
-    color: hsl(var(--note), 86%, 0.8);
+      color: hsl(var(--note), 86%, 0.8);
 }
 
 html[data-theme="dark"] .caution svg {
-    color: hsl(var(--caution), 84%, 0.6);
+      color: hsl(var(--caution), 84%, 0.6);
 }
 
 html[data-theme="dark"] .pinned svg {
-    color: hsl(var(--pinned), 80%, 0.6);
+      color: hsl(var(--pinned), 80%, 0.6);
 }
 
 .admonition-icon {
-    border-color: var(--transparent);
+      border-color: var(--transparent);
 }
 
 .admonition-icon>svg {
-    background-color: var(--transparent) !important;
+      background-color: var(--transparent) !important;
 }
 
 .admonitionblock>.admonition-icon>.svg-shadow {
-    -webkit-filter: none;
-    filter: none;
+      -webkit-filter: none;
+      filter: none;
 }
 
 .tip-shadow {
-    -webkit-filter: none;
-    filter: none;
+      -webkit-filter: none;
+      filter: none;
 }
 
 /*  Admonition & Blockquote END */
@@ -1040,146 +1040,146 @@ html[data-theme="dark"] .pinned svg {
 /* START MISC */
 
 mark {
-    background: none !important;
-    color: inherit !important;
-    font-size: inherit;
-    /* opacity: var(--opacity-sm); */
-    text-decoration: 4px underline var(--highlighter);
-    text-underline-offset: 1px;
-    text-decoration-skip-ink: skip;
+      background: none !important;
+      color: inherit !important;
+      font-size: inherit;
+      /* opacity: var(--opacity-sm); */
+      text-decoration: 4px underline var(--highlighter);
+      text-underline-offset: 1px;
+      text-decoration-skip-ink: skip;
 }
 
 mark .page-ref,
 mark .bracket {
-    text-decoration-color: var(--highlighter);
+      text-decoration-color: var(--highlighter);
 }
 
 mark .page-reference .bracket {
-    opacity: 1;
-    color: var(--bracket-highligther);
+      opacity: 1;
+      color: var(--bracket-highligther);
 }
 
 hr {
-    border-color: var(--ls-border-color);
-    margin: 1rem 0;
+      border-color: var(--ls-border-color);
+      margin: 1rem 0;
 }
 
 ::selection {
-    background-color: var(--selection);
+      background-color: var(--selection);
 }
 
 html[data-theme="dark"] .ui__button {
-    background-color: hsl(var(--ui-button-bg), 0.05);
-    border: 1px solid hsl(var(--ui-button-color), 0.1);
-    border-radius: var(--radius-md);
-    color: hsl(var(--ui-button-color));
+      background-color: hsl(var(--ui-button-bg), 0.05);
+      border: 1px solid hsl(var(--ui-button-color), 0.1);
+      border-radius: var(--radius-md);
+      color: hsl(var(--ui-button-color));
 }
 
 html[data-theme="dark"] .cp__plugins-page .secondary-tabs button.active {
-    background: hsl(var(--ui-button-bg));
-    color: var(--inverted-text);
+      background: hsl(var(--ui-button-bg));
+      color: var(--inverted-text);
 }
 
 html[data-theme="light"] .ui__button {
-    background-color: hsl(var(--ui-button-bg), 0.15);
-    border: 1px solid hsl(var(--ui-button-color), 0.5);
-    border-radius: var(--radius-md);
-    color: hsl(var(--ui-button-color));
+      background-color: hsl(var(--ui-button-bg), 0.15);
+      border: 1px solid hsl(var(--ui-button-color), 0.5);
+      border-radius: var(--radius-md);
+      color: hsl(var(--ui-button-color));
 }
 
 html[data-theme="light"] .cp__plugins-page .secondary-tabs button.active,
 html[data-theme="light"] .cp__plugins-page .tabs .ui__button.active {
-    background: hsl(var(--ui-button-bg));
-    border: 1px solid hsl(var(--ui-button-color));
-    color: var(--ls-link-text-color);
+      background: hsl(var(--ui-button-bg));
+      border: 1px solid hsl(var(--ui-button-color));
+      color: var(--ls-link-text-color);
 }
 
 html[data-theme="dark"] .cp__plugins-page .secondary-tabs button.active,
 html[data-theme="dark"] .cp__plugins-page .tabs .ui__button.active {
-    background: hsl(var(--ui-button-bg));
-    border: 1px solid hsl(var(--ui-button-color));
-    color: var(--inverted-text);
+      background: hsl(var(--ui-button-bg));
+      border: 1px solid hsl(var(--ui-button-color));
+      color: var(--inverted-text);
 }
 
 html[data-theme="dark"] .ui__button.active,
 html[data-theme="dark"] .ui__button:hover,
 html[data-theme="dark"] .cp__plugins-page .secondary-tabs button:hover,
 html[data-theme="dark"] .cp__plugins-page .tabs .ui__button:hover {
-    background-color: var(--ui-button-bg-hover);
-    color: var(--inverted-text) !important;
+      background-color: var(--ui-button-bg-hover);
+      color: var(--inverted-text) !important;
 }
 
 html[data-theme="light"] .ui__button.active,
 html[data-theme="light"] .ui__button:hover,
 html[data-theme="light"] .cp__plugins-page .secondary-tabs button:hover,
 html[data-theme="light"] .cp__plugins-page .tabs .ui__button:hover {
-    background-color: var(--ui-button-bg-hover);
-    color: var(--inverted-text) !important;
+      background-color: var(--ui-button-bg-hover);
+      color: var(--inverted-text) !important;
 }
 
 a.button.active,
 a.button:hover {
-    background: var(--ls-menu-hover-color);
+      background: var(--ls-menu-hover-color);
 }
 
 .white-theme .inline code {
-    background-color: hsl(var(--ls-page-inline-code-bg-color));
-    border: 1px solid hsl(var(--ls-page-inline-code-color), 0.05);
-    color: hsl(var(--ls-page-inline-code-color), 1);
-    padding: 2px 4px !important;
+      background-color: hsl(var(--ls-page-inline-code-bg-color));
+      border: 1px solid hsl(var(--ls-page-inline-code-color), 0.05);
+      color: hsl(var(--ls-page-inline-code-color), 1);
+      padding: 2px 4px !important;
 }
 
 .dark-theme .inline code {
-    background-color: hsl(var(--ls-page-inline-code-bg-color));
-    border: 1px solid hsl(var(--ls-page-inline-code-color), 0.05);
-    color: hsl(var(--ls-page-inline-code-color), 1);
+      background-color: hsl(var(--ls-page-inline-code-bg-color));
+      border: 1px solid hsl(var(--ls-page-inline-code-color), 0.05);
+      color: hsl(var(--ls-page-inline-code-color), 1);
 }
 
 .cp__palette-results .tip code {
-    background-color: hsl(var(--ls-page-inline-code-bg-color));
-    border: 1px solid hsl(var(--ls-page-inline-code-color), 0.05);
+      background-color: hsl(var(--ls-page-inline-code-bg-color));
+      border: 1px solid hsl(var(--ls-page-inline-code-color), 0.05);
 }
 
 .editor-inner textarea,
 input {
-    caret-color: var(--caret-color);
+      caret-color: var(--caret-color);
 }
 
 .cp__all_pages .actions .search-wrap .form-input {
-    background-color: var(--transparent);
+      background-color: var(--transparent);
 }
 
 .cp__all_pages .actions .search-wrap .form-input:focus-within {
-    background-color: hsl(var(--aqua), 0.1);
+      background-color: hsl(var(--aqua), 0.1);
 }
 
 .ui__modal-panel {
-    background: var(--ls-primary-background-color);
+      background: var(--ls-primary-background-color);
 }
 
 .block-properties,
 .color-level {
-    border-radius: var(--radius-none);
-    box-shadow: var(--box-shadow-sm);
-    outline: 1px solid var(--transparent);
+      border-radius: var(--radius-none);
+      box-shadow: var(--box-shadow-sm);
+      outline: 1px solid var(--transparent);
 }
 
 html[data-theme="light"] .block-properties,
 html[data-theme="light"] .color-level {
-    outline-color: hsl(var(--properties-border), 0.3);
+      outline-color: hsl(var(--properties-border), 0.3);
 }
 
 html[data-theme="dark"] .block-properties,
 html[data-theme="dark"] .color-level {
-    outline-color: hsl(var(--properties-border), 0.01);
+      outline-color: hsl(var(--properties-border), 0.01);
 }
 
 div.header.items-center.mb-1>a>a>i.ti-star {
-    color: hsl(var(--cream), 1);
+      color: hsl(var(--cream), 1);
 }
 
 div.header.items-center.mb-1>a>a>i.ti-history {
-    color: hsl(var(--spring-green), 1);
+      color: hsl(var(--spring-green), 1);
 }
 
 /* .block-properties {
@@ -1189,15 +1189,15 @@ div.header.items-center.mb-1>a>a>i.ti-history {
 html[data-theme="light"] .cards-title,
 html[data-theme="light"] .cp__right-sidebar .cards-title,
 html[data-theme="light"] .ui__modal .cards-title {
-    background-color: var(--card-title-bg-color);
-    border: 1px solid var(--ls-border-color);
+      background-color: var(--card-title-bg-color);
+      border: 1px solid var(--ls-border-color);
 }
 
 html[data-theme="dark"] .cards-title,
 html[data-theme="dark"] .cp__right-sidebar .cards-title,
 html[data-theme="dark"] .ui__modal .cards-title {
-    background-color: var(--card-title-bg-color);
-    border: 1px solid var(--ls-border-color);
+      background-color: var(--card-title-bg-color);
+      border: 1px solid var(--ls-border-color);
 }
 
 /* .references-blocks > div > div > .content > div > .color-level {
@@ -1206,68 +1206,68 @@ html[data-theme="dark"] .ui__modal .cards-title {
 
 .cp__palette-main .chosen,
 .cp__settings-inner>aside ul>li.active {
-    background-color: var(--ls-a-chosen-bg);
+      background-color: var(--ls-a-chosen-bg);
 }
 
 .cp__right-sidebar .sidebar-item {
-    border: none;
-    border-radius: 0;
+      border: none;
+      border-radius: 0;
 }
 
 .cp__right-sidebar-inner {
-    border-left: 1px solid var(--ls-border-color);
+      border-left: 1px solid var(--ls-border-color);
 }
 
 .cp__themes-installed>.it {
-    background-color: var(--transparent);
+      background-color: var(--transparent);
 }
 
 html[data-theme="dark"] .cp__themes-installed>.it.is-active,
 html[data-theme="dark"] .cp__themes-installed>.it:hover {
-    background-color: hsl(var(--cornflower), 0.05);
-    border: 1px solid hsl(var(--cornflower), 0.2);
-    color: hsl(var(--cornflower));
+      background-color: hsl(var(--cornflower), 0.05);
+      border: 1px solid hsl(var(--cornflower), 0.2);
+      color: hsl(var(--cornflower));
 }
 
 html[data-theme="light"] .cp__themes-installed>.it.is-active,
 html[data-theme="light"] .cp__themes-installed>.it:hover {
-    background-color: hsl(var(--denim), 0.02);
-    border: 1px solid hsl(var(--denim), 0.2);
-    color: hsl(var(--denim));
+      background-color: hsl(var(--denim), 0.02);
+      border: 1px solid hsl(var(--denim), 0.2);
+      color: hsl(var(--denim));
 }
 
 .block-content[data-type="annotation"] a.prefix-link::before {
-    content: "🔖 ";
+      content: "🔖 ";
 }
 
 [data-type="annotation"]>.block-ref {
-    border-bottom: none;
+      border-bottom: none;
 }
 
 .block-ref {
-    border-bottom: 1px ridge hsl(var(--cornflower), 0.7);
-    border-radius: 0;
-    display: inline;
-    font-size: inherit;
-    padding: 0 4px;
+      border-bottom: 1px ridge hsl(var(--cornflower), 0.7);
+      border-radius: 0;
+      display: inline;
+      font-size: inherit;
+      padding: 0 4px;
 }
 
 .block-ref>div div {
-    display: inline;
+      display: inline;
 }
 
 .block-ref:hover {
-    border-radius: var(--radius-sm);
-    color: inherit;
-    transition: var(--transition);
+      border-radius: var(--radius-sm);
+      color: inherit;
+      transition: var(--transition);
 }
 
 html[data-theme="dark"] .block-ref:hover {
-    background-color: hsl(var(--cornflower), 0.1);
+      background-color: hsl(var(--cornflower), 0.1);
 }
 
 html[data-theme="light"] .block-ref:hover {
-    background-color: hsl(var(--cornflower), 0.2);
+      background-color: hsl(var(--cornflower), 0.2);
 }
 
 /* span.block-ref > .block-content.inline > span > div > div.flex-1 > span.inline { */
@@ -1278,86 +1278,86 @@ html[data-theme="light"] .block-ref:hover {
 /* }  */
 
 .query-title {
-    background-color: var(--card-title-bg-color);
-    border: 1px solid var(--ls-border-color);
+      background-color: var(--card-title-bg-color);
+      border: 1px solid var(--ls-border-color);
 }
 
 .block-parents .page-ref {
-    /* Force color for page in reference blocks */
-    color: var(--ls-link-ref-text-color);
+      /* Force color for page in reference blocks */
+      color: var(--ls-link-ref-text-color);
 }
 
 .page-reference:hover,
 .references-blocks .page-reference:hover {
-    background-color: hsl(var(--page-ref-bg-hover), 0.15);
+      background-color: hsl(var(--page-ref-bg-hover), 0.15);
 }
 
 .foldable-title h2 {
-    /* font-style: italic; */
+      /* font-style: italic; */
 }
 
 .open-block-ref-link,
 .cp__sidebar-help-btn,
 .cp__sidebar-help-btn>.inner {
-    --misc-border: 38, 53, 75;
-    --misc-bg-color: 21, 28, 41;
-    border-radius: 100%;
+      --misc-border: 38, 53, 75;
+      --misc-bg-color: 21, 28, 41;
+      border-radius: 100%;
 }
 
 html[data-theme="light"] .open-block-ref-link,
 html[data-theme="light"] .cp__sidebar-help-btn>.inner {
-    background-color: hsl(var(--misc-bg-color), 0.03);
-    border: 1px solid hsl(var(--misc-border), 0.2);
-    color: var(--ls-primary-text-color);
+      background-color: hsl(var(--misc-bg-color), 0.03);
+      border: 1px solid hsl(var(--misc-border), 0.2);
+      color: var(--ls-primary-text-color);
 }
 
 html[data-theme="dark"] .open-block-ref-link,
 html[data-theme="dark"] .cp__sidebar-help-btn>.inner {
-    background-color: hsl(var(--misc-bg-color), 1);
-    border: 1px solid hsl(var(--misc-border), 0.3);
-    color: var(--ls-primary-text-color);
+      background-color: hsl(var(--misc-bg-color), 1);
+      border: 1px solid hsl(var(--misc-border), 0.3);
+      color: var(--ls-primary-text-color);
 }
 
 .ui__modal-overlay div {
-    background-color: var(--overlay);
-    opacity: 0.6;
+      background-color: var(--overlay);
+      opacity: 0.6;
 }
 
 .ui__ac-group-name {
-    color: var(--ls-primary-text-color);
-    font-weight: 600;
+      color: var(--ls-primary-text-color);
+      font-weight: 600;
 }
 
 .tippy-popper {
-    filter: var(--drop-shadow-sm);
+      filter: var(--drop-shadow-sm);
 }
 
 html[data-theme="dark"] .cp__right-sidebar-inner .resizer:hover {
-    background-color: hsl(var(--aqua), 0.6);
-    transition: var(--transition);
+      background-color: hsl(var(--aqua), 0.6);
+      transition: var(--transition);
 }
 
 html[data-theme="light"] .cp__right-sidebar-inner .resizer:hover {
-    background-color: hsl(var(--aqua), 1);
-    transition: var(--transition);
+      background-color: hsl(var(--aqua), 1);
+      transition: var(--transition);
 }
 
 .cp__all_pages .actions {
-    background-color: var(--ls-primary-background-color);
-    padding: 0.5em 2em;
+      background-color: var(--ls-primary-background-color);
+      padding: 0.5em 2em;
 }
 
 div[data-refs-self*="card"],
 .cards-review {
-    background-color: var(--color-level-1);
-    border-radius: var(--radius-none);
-    box-shadow: var(--box-shadow-lg);
-    outline: 1px solid var(--ls-border-color);
+      background-color: var(--color-level-1);
+      border-radius: var(--radius-none);
+      box-shadow: var(--box-shadow-lg);
+      outline: 1px solid var(--ls-border-color);
 }
 
 .panel-content div[data-refs-self*="card"] {
-    border: 1px solid var(--ls-border-color);
-    outline: none;
+      border: 1px solid var(--ls-border-color);
+      outline: none;
 }
 
 /* .cp__right-sidebar-topbar.items-center {
@@ -1368,65 +1368,70 @@ a.warning,
 div.warning:not(.admonitionblock),
 p.warning,
 span.warning {
-    background: var(--red) !important;
-    color: var(--white, #fff);
-    opacity: var(--opacity-sm);
+      background: var(--red) !important;
+      color: var(--white, #fff);
+      opacity: var(--opacity-sm);
 }
 
 a.error,
 span.error {
-    background: var(--red) !important;
-    color: var(--white, #fff);
-    opacity: var(--opacity-sm);
+      background: var(--red) !important;
+      color: var(--white, #fff);
+      opacity: var(--opacity-sm);
 }
 
 .block-children {
-    padding-bottom: 6px;
-    padding-top: 4px;
+      padding-bottom: 6px;
+      padding-top: 4px;
 }
 
 .menu-link:last-of-type {
-    border-bottom-left-radius: var(--radius-none);
-    border-bottom-right-radius: var(--radius-none);
+      border-bottom-left-radius: var(--radius-none);
+      border-bottom-right-radius: var(--radius-none);
 }
 
 .menu-link:first-of-type {
-    border-top-left-radius: var(--radius-none);
-    border-top-right-radius: var(--radius-none);
+      border-top-left-radius: var(--radius-none);
+      border-top-right-radius: var(--radius-none);
 }
 
 .reveal {
-    box-shadow: var(--box-shadow-lg);
+      box-shadow: var(--box-shadow-lg);
 }
 
 .asset-ref.is-pdf {
-    color: var(--pdf-asset-color);
-    opacity: var(--opacity-sm);
+      color: var(--pdf-asset-color);
+      opacity: var(--opacity-sm);
 }
 
 .graph-filters {
-    background-color: var(--color-level-1);
+      background-color: var(--color-level-1);
 }
 
 .flashcards-nav>a>span.ml-3.inline-block.py-0.\35 .rounded-full {
-    background-color: hsl(var(--tip), 73%, 0.05);
-    color: hsl(var(--tip), 73%, 0.6);
-    outline: 1px solid hsl(var(--tip), 73%, 0.1);
+      background-color: hsl(var(--tip), 73%, 0.05);
+      color: hsl(var(--tip), 73%, 0.6);
+      outline: 1px solid hsl(var(--tip), 73%, 0.1);
 }
 
 html[data-theme="dark"] .tip {
-    border-top-color: hsl(var(--tip), 73%, 0.02);
-    border-bottom-color: hsl(var(--tip), 73%, 0.02);
-    border-left-color: hsl(var(--tip), 73%, 0.02);
-    border-right-color: hsl(var(--tip), 73%, 0.02);
-    color: hsl(var(--tip), 73%, 0.5);
+      border-top-color: hsl(var(--tip), 73%, 0.02);
+      border-bottom-color: hsl(var(--tip), 73%, 0.02);
+      border-left-color: hsl(var(--tip), 73%, 0.02);
+      border-right-color: hsl(var(--tip), 73%, 0.02);
+      color: hsl(var(--tip), 73%, 0.5);
 }
 
 html[data-theme="light"] .tip {
-    border-top-color: hsl(var(--tip), 73%, 0.08);
-    border-bottom-color: hsl(var(--tip), 73%, 0.08);
-    border-left-color: hsl(var(--tip), 73%, 0.08);
-    border-right-color: hsl(var(--tip), 73%, 0.08);
+      border-top-color: hsl(var(--tip), 73%, 0.08);
+      border-bottom-color: hsl(var(--tip), 73%, 0.08);
+      border-left-color: hsl(var(--tip), 73%, 0.08);
+      border-right-color: hsl(var(--tip), 73%, 0.08);
+}
+
+html[data-theme="dark"] .ui-items-container .ti,
+html[data-theme="dark"] .ui-items-container .button {
+      color: var(--left-sb-txt-color)
 }
 
 /* MISC END */
@@ -1434,60 +1439,60 @@ html[data-theme="light"] .tip {
 /* START Settings & Marketplace */
 
 .cp__plugins-item-card {
-    background: var(--ls-primary-background-color, #fff);
-    border: 1px solid var(--ls-border-color);
-    box-shadow: var(--box-shadow-sm);
+      background: var(--ls-primary-background-color, #fff);
+      border: 1px solid var(--ls-border-color);
+      box-shadow: var(--box-shadow-sm);
 }
 
 .cp__plugins-item-card:hover {
-    background-color: var(--ls-quaternary-background-color);
+      background-color: var(--ls-quaternary-background-color);
 }
 
 .cp__plugins-page .secondary-tabs button.active {
-    border: 1px solid var(--ls-border-color);
+      border: 1px solid var(--ls-border-color);
 }
 
 .cp__plugins-page .tabs .ui__button.active {
-    background-color: var(--quaternary-background-color);
+      background-color: var(--quaternary-background-color);
 }
 
 .cp__settings-app-updater .update-state {
-    background-color: var(--green);
-    opacity: var(--opacity-sm);
+      background-color: var(--green);
+      opacity: var(--opacity-sm);
 }
 
 .cp__settings-app-updater .update-state>p {
-    color: var(--inverted-text);
+      color: var(--inverted-text);
 }
 
 .keyboard-shortcut>code {
-    --kbd-color: 0, 0%, 29%;
-    /* rgb(74, 74, 74) */
-    --kbd-color-dark: 205, 24%, 78%;
-    /*rgb (rgb(187, 202, 213) */
-    --kbd-border: 185, 98%, 18%;
-    /* rgb(1, 82, 89) */
-    border-color: var(--transparent);
-    border-radius: var(--radius-none);
-    display: inline-block;
-    font-size: 0.85em;
+      --kbd-color: 0, 0%, 29%;
+      /* rgb(74, 74, 74) */
+      --kbd-color-dark: 205, 24%, 78%;
+      /*rgb (rgb(187, 202, 213) */
+      --kbd-border: 185, 98%, 18%;
+      /* rgb(1, 82, 89) */
+      border-color: var(--transparent);
+      border-radius: var(--radius-none);
+      display: inline-block;
+      font-size: 0.85em;
 }
 
 .keyboard-shortcut>code+code {
-    margin-right: 0;
+      margin-right: 0;
 }
 
 html[data-theme="light"] .keyboard-shortcut>code {
-    border-color: hsl(var(--kbd-border), 1);
-    box-shadow: inset 0 -1px 0 hsl(var(--kbd-color), 0.3);
-    text-shadow: 0 1px 0 hsl(var(--kbd-color), 0.3);
+      border-color: hsl(var(--kbd-border), 1);
+      box-shadow: inset 0 -1px 0 hsl(var(--kbd-color), 0.3);
+      text-shadow: 0 1px 0 hsl(var(--kbd-color), 0.3);
 }
 
 html[data-theme="dark"] .keyboard-shortcut>code {
-    border-color: hsl(var(--kbd-border), 1);
-    box-shadow: inset 0 -1px 0 var(--box-shadow-sm);
-    color: var(--ls-primary-text-color);
-    text-shadow: 0 1px 0 hsl(var(--kbd-color-dark), 1);
+      border-color: hsl(var(--kbd-border), 1);
+      box-shadow: inset 0 -1px 0 var(--box-shadow-sm);
+      color: var(--ls-primary-text-color);
+      text-shadow: 0 1px 0 hsl(var(--kbd-color-dark), 1);
 }
 
 /* Settings & Marketplace END */
@@ -1495,27 +1500,27 @@ html[data-theme="dark"] .keyboard-shortcut>code {
 /* START Code Block */
 
 .extensions__code {
-    background-color: var(--codemirror-wrapper);
-    border: 1px solid var(--lang-border);
-    border-radius: var(--radius-none);
-    box-shadow: var(--box-shadow-sm);
-    margin-top: 6px;
+      background-color: var(--codemirror-wrapper);
+      border: 1px solid var(--lang-border);
+      border-radius: var(--radius-none);
+      box-shadow: var(--box-shadow-sm);
+      margin-top: 6px;
 }
 
 .extensions__code-lang {
-    /* background-color: var(--code-lang); */
-    border-bottom-left-radius: var(--radius-none);
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: var(--radius-none);
-    border-left: 1px solid var(--ls-border-color);
-    border-bottom: 1px solid var(--ls-border-color);
-    color: hsl(209, 31%, 50%);
-    margin-top: 0;
-    opacity: .4;
-    padding: 4px 8px;
-    right: 0;
-    top: 0;
+      /* background-color: var(--code-lang); */
+      border-bottom-left-radius: var(--radius-none);
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 0;
+      border-top-right-radius: var(--radius-none);
+      border-left: 1px solid var(--ls-border-color);
+      border-bottom: 1px solid var(--ls-border-color);
+      color: hsl(209, 31%, 50%);
+      margin-top: 0;
+      opacity: .4;
+      padding: 4px 8px;
+      right: 0;
+      top: 0;
 }
 
 /* Code Block END */
@@ -1523,292 +1528,292 @@ html[data-theme="dark"] .keyboard-shortcut>code {
 /* START Codemirror */
 
 .cm-s-solarized {
-    line-height: 1.45em;
-    color-profile: sRGB;
-    rendering-intent: auto;
+      line-height: 1.45em;
+      color-profile: sRGB;
+      rendering-intent: auto;
 }
 
 .cm-s-solarized.cm-s-dark {
-    color: #b7c1c3;
-    background-color: var(--codemirror-wrapper);
-    text-shadow: none;
+      color: #b7c1c3;
+      background-color: var(--codemirror-wrapper);
+      text-shadow: none;
 }
 
 .cm-s-solarized.cm-s-light {
-    background-color: var(--codemirror-wrapper) !important;
-    color: #b7c1c3;
-    text-shadow: none;
+      background-color: var(--codemirror-wrapper) !important;
+      color: #b7c1c3;
+      text-shadow: none;
 }
 
 .cm-s-solarized .CodeMirror-widget {
-    text-shadow: none;
+      text-shadow: none;
 }
 
 .cm-s-solarized.cm-s-dark .cm-header {
-    color: #4e5d70;
+      color: #4e5d70;
 }
 
 .cm-s-solarized.cm-s-dark .cm-quote {
-    color: #9aaabc;
+      color: #9aaabc;
 }
 
 .cm-s-solarized.cm-s-dark .cm-keyword {
-    color: #e8bf85;
+      color: #e8bf85;
 }
 
 .cm-s-solarized.cm-s-dark .cm-atom {
-    color: #7dd5c6;
+      color: #7dd5c6;
 }
 
 .cm-s-solarized.cm-s-dark .cm-number {
-    color: #ca8ba6;
+      color: #ca8ba6;
 }
 
 .cm-s-solarized.cm-s-dark .cm-def {
-    color: #92d2c5;
+      color: #92d2c5;
 }
 
 .cm-s-solarized.cm-s-dark .cm-variable {
-    color: #ca8ba6;
+      color: #ca8ba6;
 }
 
 .cm-s-solarized.cm-s-dark .cm-variable-2 {
-    color: #6b9ed2;
+      color: #6b9ed2;
 }
 
 .cm-s-solarized.cm-s-dark .cm-variable-3,
 .cm-s-solarized.cm-s-dark .cm-type {
-    color: #9e98d8;
+      color: #9e98d8;
 }
 
 .cm-s-solarized.cm-s-dark .cm-property {
-    color: #9daaba;
+      color: #9daaba;
 }
 
 .cm-s-solarized.cm-s-dark .cm-operator {
-    color: #9e98d8;
+      color: #9e98d8;
 }
 
 .cm-s-solarized.cm-s-dark .cm-comment {
-    color: #4e5d70;
-    font-style: italic;
+      color: #4e5d70;
+      font-style: italic;
 }
 
 .cm-s-solarized.cm-s-dark .cm-string {
-    color: #73c2e9;
+      color: #73c2e9;
 }
 
 .cm-s-solarized.cm-s-dark .cm-string-2 {
-    color: #6b9ed2;
+      color: #6b9ed2;
 }
 
 .cm-s-solarized.cm-s-dark .cm-meta {
-    color: #92d3c6;
+      color: #92d3c6;
 }
 
 .cm-s-solarized.cm-s-dark .cm-qualifier {
-    color: #6b9ed2;
+      color: #6b9ed2;
 }
 
 .cm-s-solarized.cm-s-dark .cm-builtin {
-    color: #ca8ba6;
+      color: #ca8ba6;
 }
 
 .cm-s-solarized.cm-s-dark .cm-bracket {
-    color: #6b9ed2;
+      color: #6b9ed2;
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-matchingbracket {
-    color: #92d3c6;
+      color: #92d3c6;
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-nonmatchingbracket {
-    color: #dc322f;
+      color: #dc322f;
 }
 
 .cm-s-solarized.cm-s-dark .cm-tag {
-    color: #d587a7;
+      color: #d587a7;
 }
 
 .cm-s-solarized.cm-s-dark .cm-variable.cm-callee {
-    color: #99f7e4 !important;
+      color: #99f7e4 !important;
 }
 
 .cm-s-solarized.cm-s-dark .cm-attribute,
 .cm-s-solarized.cm-s-dark .cm-s-white {
-    color: #c8d2df;
+      color: #c8d2df;
 }
 
 .cm-s-solarized.cm-s-dark .cm-hr {
-    color: transparent;
-    border-top: 1px solid #4e5d70;
-    display: block;
+      color: transparent;
+      border-top: 1px solid #4e5d70;
+      display: block;
 }
 
 .cm-s-solarized.cm-s-dark .cm-link {
-    color: #9aaabc;
-    cursor: pointer;
+      color: #9aaabc;
+      cursor: pointer;
 }
 
 .cm-s-solarized.cm-s-dark .cm-special {
-    color: #9e98d8;
+      color: #9e98d8;
 }
 
 .cm-s-solarized.cm-s-dark .cm-em {
-    color: #9aaabc;
-    text-decoration: underline;
-    text-decoration-style: dotted;
+      color: #9aaabc;
+      text-decoration: underline;
+      text-decoration-style: dotted;
 }
 
 .cm-s-solarized.cm-s-dark .cm-error,
 .cm-s-solarized.cm-s-dark .cm-invalidchar {
-    color: #4e5d70;
-    border-bottom: 1px dotted #dc322f;
+      color: #4e5d70;
+      border-bottom: 1px dotted #dc322f;
 }
 
 .cm-s-solarized.cm-s-light .cm-header {
-    color: #4e5d70;
+      color: #4e5d70;
 }
 
 .cm-s-solarized.cm-s-light .cm-quote {
-    color: #9aaabc;
+      color: #9aaabc;
 }
 
 .cm-s-solarized.cm-s-light .cm-keyword {
-    color: #F18701;
+      color: #F18701;
 }
 
 .cm-s-solarized.cm-s-light .cm-atom {
-    color: #2a9d90;
+      color: #2a9d90;
 }
 
 .cm-s-solarized.cm-s-light .cm-number {
-    color: #EA515F;
+      color: #EA515F;
 }
 
 .cm-s-solarized.cm-s-light .cm-def {
-    color: #2a9d90;
+      color: #2a9d90;
 }
 
 .cm-s-solarized.cm-s-light .cm-variable {
-    color: #EA515F;
+      color: #EA515F;
 }
 
 .cm-s-solarized.cm-s-light .cm-variable-2 {
-    color: #0077B6;
+      color: #0077B6;
 }
 
 .cm-s-solarized.cm-s-light .cm-variable-3,
 .cm-s-solarized.cm-s-light .cm-type {
-    color: #848dde;
+      color: #848dde;
 }
 
 .cm-s-solarized.cm-s-light .cm-property {
-    color: #535353;
+      color: #535353;
 }
 
 .cm-s-solarized.cm-s-light .CodeMirror-line {
-    color: #535353;
+      color: #535353;
 }
 
 .cm-s-solarized.cm-s-light .cm-operator {
-    color: #848dde;
+      color: #848dde;
 }
 
 .cm-s-solarized.cm-s-light .cm-comment {
-    color: #a09f9f;
-    font-style: italic;
+      color: #a09f9f;
+      font-style: italic;
 }
 
 .cm-s-solarized.cm-s-light .cm-string {
-    color: #0077B6;
+      color: #0077B6;
 }
 
 .cm-s-solarized.cm-s-light .cm-string-2 {
-    color: #0077B6;
+      color: #0077B6;
 }
 
 .cm-s-solarized.cm-s-light .cm-meta {
-    color: #2a9d90;
+      color: #2a9d90;
 }
 
 .cm-s-solarized.cm-s-light .cm-qualifier {
-    color: #0077B6;
+      color: #0077B6;
 }
 
 .cm-s-solarized.cm-s-light .cm-builtin {
-    color: #EA515F;
+      color: #EA515F;
 }
 
 .cm-s-solarized.cm-s-light .cm-bracket {
-    color: #0077B6;
+      color: #0077B6;
 }
 
 .cm-s-solarized.cm-s-light .CodeMirror-matchingbracket {
-    color: #2a9d90;
+      color: #2a9d90;
 }
 
 .cm-s-solarized.cm-s-light .CodeMirror-nonmatchingbracket {
-    color: #dc322f;
+      color: #dc322f;
 }
 
 .cm-s-solarized.cm-s-light .cm-tag {
-    color: #EA515F;
+      color: #EA515F;
 }
 
 .cm-s-solarized.cm-s-light .cm-variable.cm-callee {
-    color: #15A2A2 !important;
+      color: #15A2A2 !important;
 }
 
 .cm-s-solarized.cm-s-light .cm-attribute,
 .cm-s-solarized.cm-s-light .cm-s-white {
-    color: #535353;
+      color: #535353;
 }
 
 .cm-s-solarized.cm-s-light .cm-hr {
-    color: transparent;
-    border-top: 1px solid #4e5d70;
-    display: block;
+      color: transparent;
+      border-top: 1px solid #4e5d70;
+      display: block;
 }
 
 .cm-s-solarized.cm-s-light .cm-link {
-    color: #353535;
-    cursor: pointer;
+      color: #353535;
+      cursor: pointer;
 }
 
 .cm-s-solarized.cm-s-light .cm-special {
-    color: #848dde;
+      color: #848dde;
 }
 
 .cm-s-solarized.cm-s-light .cm-em {
-    color: #353535;
-    text-decoration: underline;
-    text-decoration-style: dotted;
+      color: #353535;
+      text-decoration: underline;
+      text-decoration-style: dotted;
 }
 
 .cm-s-solarized.cm-s-light .cm-error,
 .cm-s-solarized.cm-s-light .cm-invalidchar {
-    color: #4e5d70;
-    border-bottom: 1px dotted #dc322f;
+      color: #4e5d70;
+      border-bottom: 1px dotted #dc322f;
 }
 
 .cm-s-solarized.cm-s-dark div.CodeMirror-selected {
-    background: rgba(39, 62, 88, 1.00);
+      background: rgba(39, 62, 88, 1.00);
 }
 
 .cm-s-solarized.cm-s-dark.CodeMirror ::selection {
-    background: rgba(39, 62, 88, 1.00);
+      background: rgba(39, 62, 88, 1.00);
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-line::-moz-selection,
 .cm-s-dark .CodeMirror-line>span::-moz-selection,
 .cm-s-dark .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(39, 62, 88, 1.00);
+      background: rgba(39, 62, 88, 1.00);
 }
 
 .cm-s-solarized.cm-s-light div.CodeMirror-selected,
 .cm-s-solarized.cm-s-white div.CodeMirror-selected {
-    background: rgba(220, 237, 241, 1.00);
+      background: rgba(220, 237, 241, 1.00);
 }
 
 .cm-s-solarized.cm-s-light .CodeMirror-line::selection,
@@ -1817,7 +1822,7 @@ html[data-theme="dark"] .keyboard-shortcut>code {
 .cm-s-solarized.cm-s-white .CodeMirror-line::selection,
 .cm-s-white .CodeMirror-line>span::selection,
 .cm-s-white .CodeMirror-line>span>span::selection {
-    background: rgba(220, 237, 241, 1.00);
+      background: rgba(220, 237, 241, 1.00);
 }
 
 .cm-s-solarized.cm-s-light .CodeMirror-line::-moz-selection,
@@ -1826,94 +1831,94 @@ html[data-theme="dark"] .keyboard-shortcut>code {
 .cm-s-solarized.cm-s-white .CodeMirror-line::-moz-selection,
 .cm-s-white .CodeMirror-line>span::-moz-selection,
 .cm-s-white .CodeMirror-line>span>span::-moz-selection {
-    background: rgba(220, 237, 241, 1.00);
+      background: rgba(220, 237, 241, 1.00);
 }
 
 /* Editor styling */
 
 /* Remove gutter border */
 .cm-s-solarized .CodeMirror-gutters {
-    border-right: 0;
+      border-right: 0;
 }
 
 /* Gutter colors and line number styling based of color scheme (dark / light) */
 
 /* Dark */
 .cm-s-solarized.cm-s-dark .CodeMirror-gutters {
-    background-color: var(--codemirror-wrapper);
+      background-color: var(--codemirror-wrapper);
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-linenumber {
-    color: #4e5d70;
-    text-shadow: none;
+      color: #4e5d70;
+      text-shadow: none;
 }
 
 
 /* Light */
 .cm-s-solarized.cm-s-light .CodeMirror-gutters,
 .cm-s-solarized.cm-s-white .CodeMirror-gutters {
-    background-color: var(--codemirror-wrapper);
+      background-color: var(--codemirror-wrapper);
 }
 
 .cm-s-solarized.cm-s-light .CodeMirror-linenumber,
 .cm-s-solarized.cm-s-white .CodeMirror-linenumber {
-    color: #4e5d70;
+      color: #4e5d70;
 }
 
 /* Common */
 .cm-s-solarized .CodeMirror-linenumber {
-    padding: 0 5px;
+      padding: 0 5px;
 }
 
 .cm-s-solarized .CodeMirror-guttermarker-subtle {
-    color: #4e5d70;
+      color: #4e5d70;
 }
 
 .cm-s-solarized.cm-s-dark .CodeMirror-guttermarker {
-    color: #ddd;
+      color: #ddd;
 }
 
 .cm-s-solarized.cm-s-light .CodeMirror-guttermarker,
 .cm-s-solarized.cm-s-white .CodeMirror-guttermarker {
-    color: #e8bf85;
+      color: #e8bf85;
 }
 
 .cm-s-solarized .CodeMirror-gutter .CodeMirror-gutter-text {
-    color: #4e5d70;
+      color: #4e5d70;
 }
 
 /* Cursor */
 .cm-s-solarized .CodeMirror-cursor {
-    border-left: 2px solid #35dbbc;
+      border-left: 2px solid #35dbbc;
 }
 
 /* Fat cursor */
 .cm-s-solarized.cm-s-light.cm-fat-cursor .CodeMirror-cursor,
 .cm-s-solarized.cm-s-white.cm-fat-cursor .CodeMirror-cursor {
-    background: #77ee77;
+      background: #77ee77;
 }
 
 .cm-s-solarized.cm-s-light .cm-animate-fat-cursor,
 .cm-s-solarized.cm-s-white .cm-animate-fat-cursor {
-    background-color: #77ee77;
+      background-color: #77ee77;
 }
 
 .cm-s-solarized.cm-s-dark.cm-fat-cursor .CodeMirror-cursor {
-    background: #4e5d70;
+      background: #4e5d70;
 }
 
 .cm-s-solarized.cm-s-dark .cm-animate-fat-cursor {
-    background-color: #4e5d70;
+      background-color: #4e5d70;
 }
 
 /* Active line */
 .cm-s-solarized.cm-s-dark .CodeMirror-activeline-background {
-    background: rgba(86, 115, 156, 0.06);
+      background: rgba(86, 115, 156, 0.06);
 }
 
 .cm-s-solarized.cm-s-light .CodeMirror-activeline-background,
 .cm-s-solarized.cm-s-white .CodeMirror-activeline-background {
-    background: rgba(86, 115, 156, 0.06);
+      background: rgba(86, 115, 156, 0.06);
 }
 
 /* Codemirror theme END */
@@ -1921,27 +1926,27 @@ html[data-theme="dark"] .keyboard-shortcut>code {
 /* START Custom Links */
 
 a[href*="twitter.com/"] {
-    background: url(https://twitter.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://twitter.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="duckduckgo.com/"] {
-    background: url(https://duckduckgo.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://duckduckgo.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="youtube.com/"] {
-    background: url(https://youtube.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://youtube.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="google.com/"] {
-    background: url(https://google.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://google.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 /*
@@ -1958,121 +1963,121 @@ html[data-theme="light"] a[href*="github.com/"] {
 } */
 
 a[href*="css-tricks.com/"] {
-    background: url(https://css-tricks.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://css-tricks.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="w3schools.com/"] {
-    background: url(https://w3schools.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://w3schools.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="flaremetrics.io/"] {
-    background: url(https://flaremetrics.io/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://flaremetrics.io/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="bitcoin.org/"] {
-    background: url(https://bitcoin.org/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://bitcoin.org/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="gitlab.com/"] {
-    background: url(https://gitlab.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://gitlab.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="vimeo.com/"] {
-    background: url(https://vimeo.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://vimeo.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="bitbucket.org/"] {
-    background: url(https://bitbucket.org/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://bitbucket.org/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="dev.to/"] {
-    background: url(https://dev.to/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://dev.to/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="developer.mozilla.org/"] {
-    background: url(https://developer.mozilla.org/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://developer.mozilla.org/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="opencollective.com/"] {
-    background: url(https://opencollective.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://opencollective.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="webdevtrick.com/"] {
-    background: url(https://webdevtrick.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://webdevtrick.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="wikipedia.org/"] {
-    background: url(https://wikipedia.org/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://wikipedia.org/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="substack.com/"] {
-    background: url(https://substack.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://substack.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="hackernoon.com/"] {
-    background: url(https://hackernoon.com/favicon.ico) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://hackernoon.com/favicon.ico) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="insights.glassnode.com/"] {
-    background: url(https://insights.glassnode.com/favicon.png) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://insights.glassnode.com/favicon.png) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 html[data-theme="light"] a[href*="medium.com/"] {
-    background: url(./assets/medium.svg) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(./assets/medium.svg) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 html[data-theme="dark"] a[href*="medium.com/"] {
-    background: url(./assets/medium-light.svg) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(./assets/medium-light.svg) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 a[href*="atlassian.com/"] {
-    background: url(https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/assets/img/favicons/atlassian/apple-touch-icon-57x57.png) no-repeat left center;
-    background-size: 16px 16px;
-    padding-left: 19px;
+      background: url(https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/assets/img/favicons/atlassian/apple-touch-icon-57x57.png) no-repeat left center;
+      background-size: 16px 16px;
+      padding-left: 19px;
 }
 
 /* START Mobile Application Adjustments */
 
 #mobile-editor-toolbar {
-    outline: 1px solid var(--mobile-toolbar-border);
+      outline: 1px solid var(--mobile-toolbar-border);
 }
 
 #mobile-editor-toolbar button {
-    border-left: 1px solid var(--mobile-toolbar-border);
+      border-left: 1px solid var(--mobile-toolbar-border);
 }
 
 /*Mobile Application Adjustments END */
@@ -2082,35 +2087,35 @@ a[href*="atlassian.com/"] {
 /* START Templater plugin */
 
 .templater-btn {
-    background-color: hsl(var(--ui-button-bg), 0.05);
-    border: 1px solid hsl(var(--ui-button-color), 0.1);
-    border-radius: var(--radius-md);
-    color: hsl(var(--ui-button-color));
-    padding: 0.2em 0.8em;
+      background-color: hsl(var(--ui-button-bg), 0.05);
+      border: 1px solid hsl(var(--ui-button-color), 0.1);
+      border-radius: var(--radius-md);
+      color: hsl(var(--ui-button-color));
+      padding: 0.2em 0.8em;
 }
 
 .templater-btn:hover {
-    background: hsl(var(--ui-button-bg));
-    border: 1px solid hsl(var(--ui-button-color));
-    color: var(--inverted-text);
-    cursor: pointer;
+      background: hsl(var(--ui-button-bg));
+      border: 1px solid hsl(var(--ui-button-color));
+      color: var(--inverted-text);
+      cursor: pointer;
 }
 
 /* Templater plugin END */
 
 /* START TOC Generatorv Plugin */
 .kef-tocgen-backtop {
-    background-color: hsl(var(--ui-button-bg), 0.05);
-    border: 1px solid hsl(var(--ui-button-color), 0.2);
-    color: hsl(var(--ui-button-color));
+      background-color: hsl(var(--ui-button-bg), 0.05);
+      border: 1px solid hsl(var(--ui-button-color), 0.2);
+      color: hsl(var(--ui-button-color));
 }
 
 .kef-tocgen-icon-backtop {
-    fill: hsl(var(--ui-button-color), 1);
+      fill: hsl(var(--ui-button-color), 1);
 }
 
 .kef-tocgen-backtop:hover {
-    box-shadow: var(--box-shadow-lg);
+      box-shadow: var(--box-shadow-lg);
 }
 
 /* TOC  TOC Generatorv Plugin END */
@@ -2125,117 +2130,117 @@ span[data-ref="$green"],
 span[data-ref="$blue"],
 span[data-ref="$purple"],
 span[data-ref="$grey"] {
-    display: none;
+      display: none;
 }
 
 span[data-ref="#red"]+mark {
-    color: inherit !important;
-    background: none !important;
-    text-decoration-color: hsl(338, 80%, 80%) !important;
+      color: inherit !important;
+      background: none !important;
+      text-decoration-color: hsl(338, 80%, 80%) !important;
 }
 
 span[data-ref="#green"]+mark {
-    color: inherit !important;
-    background: none !important;
-    text-decoration-color: hsl(173, 60%, 62%) !important;
+      color: inherit !important;
+      background: none !important;
+      text-decoration-color: hsl(173, 60%, 62%) !important;
 }
 
 span[data-ref="#blue"]+mark {
-    color: inherit !important;
-    background: none !important;
-    text-decoration-color: hsl(209, 87%, 73%) !important;
+      color: inherit !important;
+      background: none !important;
+      text-decoration-color: hsl(209, 87%, 73%) !important;
 }
 
 span[data-ref="#purple"]+mark {
-    color: inherit !important;
-    background: none !important;
-    text-decoration-color: hsl(249, 100%, 85%) !important;
+      color: inherit !important;
+      background: none !important;
+      text-decoration-color: hsl(249, 100%, 85%) !important;
 }
 
 span[data-ref="#grey"]+mark {
-    color: inherit !important;
-    background: none !important;
-    text-decoration-color: hsl(214, 29%, 68%) !important;
+      color: inherit !important;
+      background: none !important;
+      text-decoration-color: hsl(214, 29%, 68%) !important;
 }
 
 html[data-theme="dark"] span[data-ref="$red"]+mark {
-    color: hsl(338, 80%, 70%) !important;
-    background: unset;
-    padding: 0;
-    border-radius: 0;
-    text-decoration: none;
+      color: hsl(338, 80%, 70%) !important;
+      background: unset;
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
 }
 
 html[data-theme="dark"] span[data-ref="$green"]+mark {
-    color: hsl(173, 60%, 62%) !important;
-    background: unset;
-    padding: 0;
-    border-radius: 0;
-    text-decoration: none;
+      color: hsl(173, 60%, 62%) !important;
+      background: unset;
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
 }
 
 html[data-theme="dark"] span[data-ref="$blue"]+mark {
-    color: hsl(209, 87%, 73%) !important;
-    background: unset;
-    padding: 0;
-    border-radius: 0;
-    text-decoration: none;
+      color: hsl(209, 87%, 73%) !important;
+      background: unset;
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
 }
 
 html[data-theme="dark"] span[data-ref="$purple"]+mark {
-    color: hsl(249, 100%, 85%) !important;
-    background: unset;
-    padding: 0;
-    border-radius: 0;
-    text-decoration: none;
+      color: hsl(249, 100%, 85%) !important;
+      background: unset;
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
 }
 
 html[data-theme="dark"] span[data-ref="$grey"]+mark {
-    color: hsl(214, 29%, 68%) !important;
-    background: unset;
-    padding: 0;
-    border-radius: 0;
-    text-decoration: none;
+      color: hsl(214, 29%, 68%) !important;
+      background: unset;
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
 }
 
 html[data-theme="light"] span[data-ref="$red"]+mark {
-    color: hsl(338, 80%, 40%) !important;
-    background: unset;
-    padding: 0;
-    border-radius: 0;
-    text-decoration: none;
+      color: hsl(338, 80%, 40%) !important;
+      background: unset;
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
 }
 
 html[data-theme="light"] span[data-ref="$green"]+mark {
-    color: hsl(173, 60%, 32%) !important;
-    background: unset;
-    padding: 0;
-    border-radius: 0;
-    text-decoration: none;
+      color: hsl(173, 60%, 32%) !important;
+      background: unset;
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
 }
 
 html[data-theme="light"] span[data-ref="$blue"]+mark {
-    color: hsl(209, 87%, 43%) !important;
-    background: unset;
-    padding: 0;
-    border-radius: 0;
-    text-decoration: none;
+      color: hsl(209, 87%, 43%) !important;
+      background: unset;
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
 }
 
 html[data-theme="light"] span[data-ref="$purple"]+mark {
-    color: hsl(249, 100%, 75%) !important;
-    background: unset;
-    padding: 0;
-    border-radius: 0;
-    text-decoration: none;
+      color: hsl(249, 100%, 75%) !important;
+      background: unset;
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
 }
 
 html[data-theme="light"] span[data-ref="$grey"]+mark {
-    color: hsl(214, 29%, 48%) !important;
-    background: unset;
-    padding: 0;
-    border-radius: 0;
-    text-decoration: none;
+      color: hsl(214, 29%, 48%) !important;
+      background: unset;
+      padding: 0;
+      border-radius: 0;
+      text-decoration: none;
 }
 
 /* Plugin Wrap END */
